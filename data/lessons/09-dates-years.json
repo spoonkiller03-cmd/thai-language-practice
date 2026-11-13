@@ -6,43 +6,277 @@
     "Date: wan + day + tîi + number: wanníi wan angkaan tîi 13.",
     "wanníi wan tîi tâorài? = what's the date today?",
     "ìik 5 bpii = in 5 more years · bpii tîilɛ́ɛo = last year · bpii nâa = next year.",
-    "Month names are coming soon (from your book)."
+    "Months: dʉan + name. The ending (-kom / -yon / -pan) is often dropped when speaking: dʉan tanwaa(kom). -kom months have 31 days, -yon 30, gumpaa(pan) 28–29."
   ],
-  "generators": ["date", "year"],
+  "generators": [
+    "date",
+    "month",
+    "year"
+  ],
   "vocab": [
-    ["wan tîi", "วันที่", "date (day number)"],
-    ["tâorài", "เท่าไร", "how much / what number?"],
-    ["dʉan níi", "เดือนนี้", "this month"],
-    ["dʉan nâa", "เดือนหน้า", "next month"],
-    ["dʉan tîilɛ́ɛo", "เดือนที่แล้ว", "last month"],
-    ["bpii níi", "ปีนี้", "this year"],
-    ["bpii nâa", "ปีหน้า", "next year"],
-    ["bpii tîilɛ́ɛo", "ปีที่แล้ว", "last year"],
-    ["ìik", "อีก", "in (… more time); another"],
-    ["wan kə̀ət", "วันเกิด", "birthday"],
-    ["jàt ngaan", "จัดงาน", "to throw a party / hold an event"],
-    ["roongrɛɛm", "โรงแรม", "hotel"],
-    ["yáai bâan", "ย้ายบ้าน", "to move house"],
-    ["bpai tîao", "ไปเที่ยว", "to go on a trip"],
-    ["talee", "ทะเล", "sea, beach"],
-    ["wan bpii mài", "วันปีใหม่", "New Year's Day"],
-    ["króp rɔ̂ɔp", "ครบรอบ", "anniversary"]
+    [
+      "wan tîi",
+      "วันที่",
+      "date (day number)"
+    ],
+    [
+      "tâorài",
+      "เท่าไร",
+      "how much / what number?"
+    ],
+    [
+      "dʉan níi",
+      "เดือนนี้",
+      "this month"
+    ],
+    [
+      "dʉan nâa",
+      "เดือนหน้า",
+      "next month"
+    ],
+    [
+      "dʉan tîilɛ́ɛo",
+      "เดือนที่แล้ว",
+      "last month"
+    ],
+    [
+      "bpii níi",
+      "ปีนี้",
+      "this year"
+    ],
+    [
+      "bpii nâa",
+      "ปีหน้า",
+      "next year"
+    ],
+    [
+      "bpii tîilɛ́ɛo",
+      "ปีที่แล้ว",
+      "last year"
+    ],
+    [
+      "ìik",
+      "อีก",
+      "in (… more time); another"
+    ],
+    [
+      "wan kə̀ət",
+      "วันเกิด",
+      "birthday"
+    ],
+    [
+      "jàt ngaan",
+      "จัดงาน",
+      "to throw a party / hold an event"
+    ],
+    [
+      "roongrɛɛm",
+      "โรงแรม",
+      "hotel"
+    ],
+    [
+      "yáai bâan",
+      "ย้ายบ้าน",
+      "to move house"
+    ],
+    [
+      "bpai tîao",
+      "ไปเที่ยว",
+      "to go on a trip"
+    ],
+    [
+      "talee",
+      "ทะเล",
+      "sea, beach"
+    ],
+    [
+      "wan bpii mài",
+      "วันปีใหม่",
+      "New Year's Day"
+    ],
+    [
+      "króp rɔ̂ɔp",
+      "ครบรอบ",
+      "anniversary"
+    ],
+    [
+      "dʉan",
+      "เดือน",
+      "month"
+    ],
+    [
+      "mókgaraakom / mókgaraa",
+      "มกราคม",
+      "January"
+    ],
+    [
+      "gumpaapan / gumpaa",
+      "กุมภาพันธ์",
+      "February"
+    ],
+    [
+      "miinaakom / miinaa",
+      "มีนาคม",
+      "March"
+    ],
+    [
+      "meesǎayon / meesǎa",
+      "เมษายน",
+      "April"
+    ],
+    [
+      "prʉ́tsapaakom / prʉ́tsapaa",
+      "พฤษภาคม",
+      "May"
+    ],
+    [
+      "mítùnaayon / mítùnaa",
+      "มิถุนายน",
+      "June"
+    ],
+    [
+      "garágàdaakom / garágàdaa",
+      "กรกฎาคม",
+      "July"
+    ],
+    [
+      "sǐnghǎakom / sǐnghǎa",
+      "สิงหาคม",
+      "August"
+    ],
+    [
+      "ganyaayon / ganyaa",
+      "กันยายน",
+      "September"
+    ],
+    [
+      "dtùlaakom / dtùlaa",
+      "ตุลาคม",
+      "October"
+    ],
+    [
+      "prʉ́tsàjìgaayon / prʉ́tsàjìgaa",
+      "พฤศจิกายน",
+      "November"
+    ],
+    [
+      "tanwaakom / tanwaa",
+      "ธันวาคม",
+      "December"
+    ]
   ],
   "sentences": [
-    ["wanníi wan angkaan [tîi] 13", "วันนี้วันอังคารที่ 13", "Today is Tuesday the 13th."],
-    ["wan króp rɔ̂ɔp dtɛ̀ngngaan [wan pá-rʉ́-hàt]", "วันครบรอบแต่งงานวันพฤหัส", "The wedding anniversary is on Thursday."],
-    ["[ìik] 5 bpii bpen bpii 2027", "อีก 5 ปีเป็นปี 2027", "In 5 more years it will be 2027."],
-    ["kun Eric [yáai bâan] mʉ̂a wan pút tîilɛ́ɛo", "คุณเอริคย้ายบ้านเมื่อวันพุธที่แล้ว", "Eric moved house last Wednesday."],
-    ["wan jan tîi 19 kun Eric jà [jàt ngaan] wan kə̀ət tîi roongrɛɛm Novotel", "วันจันทร์ที่ 19 คุณเอริคจะจัดงานวันเกิดที่โรงแรมโนโวเทล", "On Monday the 19th, Eric will have a birthday party at the Novotel."],
-    ["kun Eric jà [bpai tîao] talee dtângdtɛ̀ɛ wan pá-rʉ́-hàt tîi 15 tʉ̌ng wan aatít tîi 18", "คุณเอริคจะไปเที่ยวทะเลตั้งแต่วันพฤหัสที่ 15 ถึงวันอาทิตย์ที่ 18", "Eric is going to the beach from Thursday the 15th to Sunday the 18th."],
-    ["wan kə̀ət kɔ̌ɔng kun [wan tîi] tâorài?", "วันเกิดของคุณวันที่เท่าไร", "What date is your birthday?"],
-    ["chán jà glàp bâan [dʉan nâa]", "ฉันจะกลับบ้านเดือนหน้า", "I'm going home next month."],
-    ["[bpii tîilɛ́ɛo] chán bpai gaolǐi", "ปีที่แล้วฉันไปเกาหลี", "Last year I went to Korea."],
-    ["wanníi wan tîi [tâorài]?", "วันนี้วันที่เท่าไร", "What's the date today?"]
+    [
+      "wanníi wan angkaan [tîi] 13",
+      "วันนี้วันอังคารที่ 13",
+      "Today is Tuesday the 13th."
+    ],
+    [
+      "wan króp rɔ̂ɔp dtɛ̀ngngaan [wan pá-rʉ́-hàt]",
+      "วันครบรอบแต่งงานวันพฤหัส",
+      "The wedding anniversary is on Thursday."
+    ],
+    [
+      "[ìik] 5 bpii bpen bpii 2027",
+      "อีก 5 ปีเป็นปี 2027",
+      "In 5 more years it will be 2027."
+    ],
+    [
+      "kun Eric [yáai bâan] mʉ̂a wan pút tîilɛ́ɛo",
+      "คุณเอริคย้ายบ้านเมื่อวันพุธที่แล้ว",
+      "Eric moved house last Wednesday."
+    ],
+    [
+      "wan jan tîi 19 kun Eric jà [jàt ngaan] wan kə̀ət tîi roongrɛɛm Novotel",
+      "วันจันทร์ที่ 19 คุณเอริคจะจัดงานวันเกิดที่โรงแรมโนโวเทล",
+      "On Monday the 19th, Eric will have a birthday party at the Novotel."
+    ],
+    [
+      "kun Eric jà [bpai tîao] talee dtângdtɛ̀ɛ wan pá-rʉ́-hàt tîi 15 tʉ̌ng wan aatít tîi 18",
+      "คุณเอริคจะไปเที่ยวทะเลตั้งแต่วันพฤหัสที่ 15 ถึงวันอาทิตย์ที่ 18",
+      "Eric is going to the beach from Thursday the 15th to Sunday the 18th."
+    ],
+    [
+      "wan kə̀ət kɔ̌ɔng kun [wan tîi] tâorài?",
+      "วันเกิดของคุณวันที่เท่าไร",
+      "What date is your birthday?"
+    ],
+    [
+      "chán jà glàp bâan [dʉan nâa]",
+      "ฉันจะกลับบ้านเดือนหน้า",
+      "I'm going home next month."
+    ],
+    [
+      "[bpii tîilɛ́ɛo] chán bpai gaolǐi",
+      "ปีที่แล้วฉันไปเกาหลี",
+      "Last year I went to Korea."
+    ],
+    [
+      "wanníi wan tîi [tâorài]?",
+      "วันนี้วันที่เท่าไร",
+      "What's the date today?"
+    ],
+    [
+      "wan kə̀ət kɔ̌ɔng chán dʉan [mítùnaa]",
+      "วันเกิดของฉันเดือนมิถุนายน",
+      "My birthday is in June."
+    ],
+    [
+      "chán rə̂əm rian paasǎa tai dʉan [ganyaa]",
+      "ฉันเริ่มเรียนภาษาไทยเดือนกันยายน",
+      "I started learning Thai in September."
+    ],
+    [
+      "dʉan [meesǎa] aagàat rɔ́ɔn mâak",
+      "เดือนเมษายนอากาศร้อนมาก",
+      "The weather is very hot in April."
+    ],
+    [
+      "dʉan nâa chán jà rə̂əm rian kǐan paasǎa tai, dʉan [tanwaa]",
+      "เดือนหน้าฉันจะเริ่มเรียนเขียนภาษาไทย เดือนธันวาคม",
+      "Next month I'll start learning to write Thai, in December."
+    ],
+    [
+      "dʉan [gumpaa] mii 28 wan",
+      "เดือนกุมภาพันธ์มี 28 วัน",
+      "February has 28 days."
+    ],
+    [
+      "wan bpii mài kʉʉ wan tîi 1 dʉan [mókgaraa]",
+      "วันปีใหม่คือวันที่ 1 เดือนมกราคม",
+      "New Year's Day is the 1st of January."
+    ],
+    [
+      "fǒn dtòk táng dʉan [garágàdaa]",
+      "ฝนตกทั้งเดือนกรกฎาคม",
+      "It rains the whole of July."
+    ]
   ],
   "qa": [
-    {"ctx": "🎂 Your birthday is on the 3rd.", "q": "wan kə̀ət kɔ̌ɔng kun wan tîi tâorài?", "a": "wan kə̀ət kɔ̌ɔng chán wan tîi 3"},
-    {"ctx": "✈️ You went to Korea last year.", "q": "kun bpai gaolǐi mʉ̂arài?", "a": "chán bpai gaolǐi bpii tîilɛ́ɛo"},
-    {"ctx": "🏖️ You're going to the beach next month.", "q": "kun jà bpai tîao talee mʉ̂arài?", "a": "chán jà bpai tîao talee dʉan nâa"}
+    {
+      "ctx": "🎂 Your birthday is on the 3rd.",
+      "q": "wan kə̀ət kɔ̌ɔng kun wan tîi tâorài?",
+      "a": "wan kə̀ət kɔ̌ɔng chán wan tîi 3"
+    },
+    {
+      "ctx": "✈️ You went to Korea last year.",
+      "q": "kun bpai gaolǐi mʉ̂arài?",
+      "a": "chán bpai gaolǐi bpii tîilɛ́ɛo"
+    },
+    {
+      "ctx": "🏖️ You're going to the beach next month.",
+      "q": "kun jà bpai tîao talee mʉ̂arài?",
+      "a": "chán jà bpai tîao talee dʉan nâa"
+    },
+    {
+      "ctx": "🎂 Your birthday is in June.",
+      "q": "wan kə̀ət kɔ̌ɔng kun dʉan arai?",
+      "a": "wan kə̀ət kɔ̌ɔng chán dʉan mítùnaa"
+    },
+    {
+      "ctx": "📚 You started Thai classes in September.",
+      "q": "kun rə̂əm rian paasǎa tai mʉ̂arài?",
+      "a": "chán rə̂əm rian paasǎa tai dʉan ganyaa"
+    }
   ]
 }

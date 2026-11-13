@@ -3,7 +3,7 @@
    Content lives in data/lessons/*.json (listed in data/index.json).
    Progress is stored on this device only (localStorage) and can be exported. */
 
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0';
 const STORE_KEY = 'thai-practice.v1';
 const DAY = 86400000;
 const INTERVALS = [0, 1, 3, 7, 14, 30, 60]; // days, by box
@@ -192,15 +192,27 @@ function thaiTime(hr, m) {
   else if (hr <= 11) bases = [hr + ' moong cháao', hr + ' moong'];
   else if (hr === 12) bases = ['tîang', 'tîang wan'];
   else if (hr === 13) bases = ['bàai moong', 'bàai 1 moong'];
-  else if (hr <= 15) bases = ['bàai ' + (hr - 12) + ' moong'];
-  else if (hr <= 18) { bases = [(hr - 12) + ' moong yen']; if (hr === 16) bases.push('bàai 4 moong'); }
+  else if (hr <= 15) { bases = ['bàai ' + (hr - 12) + ' moong', 'bàai ' + (hr - 12)]; if (hr === 15) bases.push('3 moong yen'); }
+  else if (hr <= 18) { bases = [(hr - 12) + ' moong yen', (hr - 12) + ' moong']; if (hr <= 17) bases.push('bàai ' + (hr - 12) + ' moong'); }
   else bases = [(hr - 18) + ' tûm'];
   if (m === 0) return bases;
   const out = [];
   for (const b of bases) { if (m === 30) out.push(b + ' krʉ̂ng'); out.push(b + ' ' + m + ' naatii'); }
   return out;
 }
+const MONTHS = [['mókgaraa', 'kom', 'January'], ['gumpaa', 'pan', 'February'], ['miinaa', 'kom', 'March'], ['meesǎa', 'yon', 'April'], ['prʉ́tsapaa', 'kom', 'May'], ['mítùnaa', 'yon', 'June'], ['garágàdaa', 'kom', 'July'], ['sǐnghǎa', 'kom', 'August'], ['ganyaa', 'yon', 'September'], ['dtùlaa', 'kom', 'October'], ['prʉ́tsàjìgaa', 'yon', 'November'], ['tanwaa', 'kom', 'December']];
+function monthForms(i) { const [a, b] = MONTHS[i]; return ['dʉan ' + a + b, 'dʉan ' + a, a + b, a]; }
 const GENERATORS = {
+  month() {
+    const i = rand(12); const mode = rand(3);
+    if (mode === 0) {
+      const f = monthForms(i);
+      return { kind: 'typed', label: 'Months', ctx: '📅 It is ' + MONTHS[i][2] + '.', q: 'dʉan níi dʉan arai?', answers: f.map((x) => 'dʉan níi ' + x).concat(f), show: 'dʉan níi ' + f[0] };
+    }
+    const fwd = mode === 1; const j = (i + (fwd ? 1 : 11)) % 12; const w = fwd ? 'dʉan nâa' : 'dʉan tîilɛ́ɛo';
+    const f = monthForms(j);
+    return { kind: 'typed', label: 'Months', ctx: 'Work it out in Thai.', q: 'dʉan níi dʉan ' + MONTHS[i][0] + MONTHS[i][1] + ', ' + w + ' dʉan arai?', answers: f.map((x) => w + ' ' + x).concat(f), show: w + ' ' + f[0] };
+  },
   time() {
     const hr = rand(24);
     const r = Math.random();
@@ -488,7 +500,7 @@ function listeningStart() {
   runSession('Listening', due.concat(pool.filter((c) => !due.includes(c))).slice(0, 15), { practice: true });
 }
 function numbersStart() {
-  const gens = ['time', 'duration', 'day', 'date', 'year', 'ordinal'].filter((g) => enabledGenerators().includes(g));
+  const gens = ['time', 'duration', 'day', 'date', 'month', 'year', 'ordinal'].filter((g) => enabledGenerators().includes(g));
   const list = gens.length ? gens : ['time', 'day'];
   const make = () => makeGen(pick(list));
   runSession('Time & numbers', [make(), make()], { endless: make });

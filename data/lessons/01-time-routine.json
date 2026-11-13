@@ -1,59 +1,236 @@
 {
   "id": "time-routine",
   "title": "Telling the time & daily routine",
-  "source": "Journey 2 · Chapter 21",
+  "source": "Journey 2 · Chapter 21 + book p. 4–5",
   "notes": [
     "dtɔɔn nǎi? = when? · gìi moong? = what time?",
-    "Thai splits the day into blocks: dtii 1–5 (1–5 a.m.), 6–11 moong cháao, tîang (noon), bàai 1–3 moong, 4–6 moong yen, 1–5 tûm (7–11 p.m.), tîang kʉʉn (midnight).",
+    "Daytime (dtɔɔn glaang wan): 6–11 moong (cháao), tîang / tîang wan (noon, the whole 12:xx hour), bàai (1) moong, bàai 2–3 (moong), 4–6 moong (yen). Night (dtɔɔn glaang kʉʉn): 1–5 tûm (7–11 p.m.), tîang kʉʉn (midnight), dtii 1–5 (1–5 a.m.). tûm goes AFTER the number, dtii goes BEFORE it.",
     "Minutes: … naatii (8 moong 25 naatii). Half past: … krʉ̂ng (7 moong krʉ̂ng).",
-    "Time words like dtɔɔn cháao / dtɔɔn bàai / dtɔɔn kâm go after the verb: chán dtʉ̀ʉn dtɔɔn cháao."
+    "Time words like dtɔɔn cháao / dtɔɔn bàai / dtɔɔn kâm go after the verb: chán dtʉ̀ʉn dtɔɔn cháao.",
+    "Variations people use: 3 moong yen for 3 p.m., and bàai 4 / bàai 5 moong for 4–5 p.m."
   ],
-  "generators": ["time"],
+  "generators": [
+    "time"
+  ],
   "vocab": [
-    ["dtɔɔn nǎi", "ตอนไหน", "when?"],
-    ["gìi moong", "กี่โมง", "what time?"],
-    ["naatii", "นาที", "minute"],
-    ["krʉ̂ng", "ครึ่ง", "half (… thirty)"],
-    ["moong cháao", "โมงเช้า", "o'clock in the morning (6–11 a.m.)"],
-    ["bàai", "บ่าย", "afternoon (bàai 2 moong = 2 p.m.)"],
-    ["moong yen", "โมงเย็น", "o'clock in the evening (4–6 p.m.)"],
-    ["tûm", "ทุ่ม", "o'clock at night (1 tûm = 7 p.m.)"],
-    ["tîang", "เที่ยง", "noon"],
-    ["tîang kʉʉn", "เที่ยงคืน", "midnight"],
-    ["dtii", "ตี", "o'clock after midnight (dtii 2 = 2 a.m.)"],
-    ["dtɔɔn cháao", "ตอนเช้า", "in the morning"],
-    ["dtɔɔn bàai", "ตอนบ่าย", "in the afternoon"],
-    ["dtɔɔn kâm", "ตอนค่ำ", "in the evening"],
-    ["dtʉ̀ʉn", "ตื่น", "to wake up"],
-    ["nɔɔn", "นอน", "to sleep, go to bed"],
-    ["wâai náam", "ว่ายน้ำ", "to swim"],
-    ["tam aahǎan", "ทำอาหาร", "to cook"],
-    ["fang pleeng", "ฟังเพลง", "to listen to music"],
-    ["kʉ̂n rót fai fáa", "ขึ้นรถไฟฟ้า", "to take the skytrain"],
-    ["tam ngaan", "ทำงาน", "to work"],
-    ["lə̂ək ngaan", "เลิกงาน", "to finish work"],
-    ["sèt lɛ́ɛo", "เสร็จแล้ว", "finished, done"]
+    [
+      "dtɔɔn nǎi",
+      "ตอนไหน",
+      "when?"
+    ],
+    [
+      "gìi moong",
+      "กี่โมง",
+      "what time?"
+    ],
+    [
+      "naatii",
+      "นาที",
+      "minute"
+    ],
+    [
+      "krʉ̂ng",
+      "ครึ่ง",
+      "half (… thirty)"
+    ],
+    [
+      "moong cháao",
+      "โมงเช้า",
+      "o'clock in the morning (6–11 a.m.)"
+    ],
+    [
+      "bàai",
+      "บ่าย",
+      "afternoon (bàai 2 moong = 2 p.m.)"
+    ],
+    [
+      "moong yen",
+      "โมงเย็น",
+      "o'clock in the evening (4–6 p.m.)"
+    ],
+    [
+      "tûm",
+      "ทุ่ม",
+      "o'clock at night (1 tûm = 7 p.m.)"
+    ],
+    [
+      "tîang",
+      "เที่ยง",
+      "noon"
+    ],
+    [
+      "tîang kʉʉn",
+      "เที่ยงคืน",
+      "midnight"
+    ],
+    [
+      "dtii",
+      "ตี",
+      "o'clock after midnight (dtii 2 = 2 a.m.)"
+    ],
+    [
+      "dtɔɔn cháao",
+      "ตอนเช้า",
+      "in the morning"
+    ],
+    [
+      "dtɔɔn bàai",
+      "ตอนบ่าย",
+      "in the afternoon"
+    ],
+    [
+      "dtɔɔn kâm",
+      "ตอนค่ำ",
+      "in the evening"
+    ],
+    [
+      "dtʉ̀ʉn",
+      "ตื่น",
+      "to wake up"
+    ],
+    [
+      "nɔɔn",
+      "นอน",
+      "to sleep, go to bed"
+    ],
+    [
+      "wâai náam",
+      "ว่ายน้ำ",
+      "to swim"
+    ],
+    [
+      "tam aahǎan",
+      "ทำอาหาร",
+      "to cook"
+    ],
+    [
+      "fang pleeng",
+      "ฟังเพลง",
+      "to listen to music"
+    ],
+    [
+      "kʉ̂n rót fai fáa",
+      "ขึ้นรถไฟฟ้า",
+      "to take the skytrain"
+    ],
+    [
+      "tam ngaan",
+      "ทำงาน",
+      "to work"
+    ],
+    [
+      "lə̂ək ngaan",
+      "เลิกงาน",
+      "to finish work"
+    ],
+    [
+      "sèt lɛ́ɛo",
+      "เสร็จแล้ว",
+      "finished, done"
+    ],
+    [
+      "dtɔɔn glaang wan",
+      "ตอนกลางวัน",
+      "daytime"
+    ],
+    [
+      "dtɔɔn glaang kʉʉn",
+      "ตอนกลางคืน",
+      "nighttime"
+    ]
   ],
   "sentences": [
-    ["chán [dtʉ̀ʉn] dtɔɔn cháao 7 moong", "ฉันตื่นตอนเช้า 7 โมง", "I wake up at 7 in the morning."],
-    ["káo dtʉ̀ʉn dtɔɔn cháao [8 moong 25 naatii]", "เขาตื่นตอนเช้า 8 โมง 25 นาที", "He wakes up at 8:25 a.m."],
-    ["káo [nɔɔn] dtɔɔn tîang kʉʉn", "เขานอนตอนเที่ยงคืน", "She goes to bed at midnight."],
-    ["káo wâai náam dtɔɔn kâm [1 tûm 45 naatii]", "เขาว่ายน้ำตอนค่ำ 1 ทุ่ม 45 นาที", "He swims in the evening at 7:45 p.m."],
-    ["mɛ̂ɛ [tam aahǎan] dtɔɔn kâm", "แม่ทำอาหารตอนค่ำ", "Mom cooks in the evening."],
-    ["rao [kʉ̂n rót fai fáa] 10 moong cháao", "เราขึ้นรถไฟฟ้า 10 โมงเช้า", "We take the skytrain at 10 a.m."],
-    ["pǒm [lə̂ək ngaan] 6 moong yen", "ผมเลิกงาน 6 โมงเย็น", "I (m) finish work at 6 p.m."],
-    ["kun tam ngaan [gìi moong]?", "คุณทำงานกี่โมง", "What time do you work?"],
-    ["kun fang pleeng [dtɔɔn nǎi]?", "คุณฟังเพลงตอนไหน", "When do you listen to music?"],
-    ["chán fang pleeng [bàai] 2 moong", "ฉันฟังเพลงบ่าย 2 โมง", "I listen to music at 2 p.m."],
-    ["káo gin kâao cháao 7 moong [krʉ̂ng]", "เขากินข้าวเช้า 7 โมงครึ่ง", "He eats breakfast at 7:30."],
-    ["chán bpai rian paasǎa tai [tîang]", "ฉันไปเรียนภาษาไทยเที่ยง", "I go to Thai class at noon."],
-    ["káo lə̂ək ngaan dtɔɔn dʉ̀k, [3 tûm] 5 naatii", "เขาเลิกงานตอนดึก 3 ทุ่ม 5 นาที", "He finishes work late, at 9:05 p.m."],
-    ["mʉ̂akʉʉn chán nɔɔn [dtii 2]", "เมื่อคืนฉันนอนตี 2", "Last night I went to bed at 2 a.m."]
+    [
+      "chán [dtʉ̀ʉn] dtɔɔn cháao 7 moong",
+      "ฉันตื่นตอนเช้า 7 โมง",
+      "I wake up at 7 in the morning."
+    ],
+    [
+      "káo dtʉ̀ʉn dtɔɔn cháao [8 moong 25 naatii]",
+      "เขาตื่นตอนเช้า 8 โมง 25 นาที",
+      "He wakes up at 8:25 a.m."
+    ],
+    [
+      "káo [nɔɔn] dtɔɔn tîang kʉʉn",
+      "เขานอนตอนเที่ยงคืน",
+      "She goes to bed at midnight."
+    ],
+    [
+      "káo wâai náam dtɔɔn kâm [1 tûm 45 naatii]",
+      "เขาว่ายน้ำตอนค่ำ 1 ทุ่ม 45 นาที",
+      "He swims in the evening at 7:45 p.m."
+    ],
+    [
+      "mɛ̂ɛ [tam aahǎan] dtɔɔn kâm",
+      "แม่ทำอาหารตอนค่ำ",
+      "Mom cooks in the evening."
+    ],
+    [
+      "rao [kʉ̂n rót fai fáa] 10 moong cháao",
+      "เราขึ้นรถไฟฟ้า 10 โมงเช้า",
+      "We take the skytrain at 10 a.m."
+    ],
+    [
+      "pǒm [lə̂ək ngaan] 6 moong yen",
+      "ผมเลิกงาน 6 โมงเย็น",
+      "I (m) finish work at 6 p.m."
+    ],
+    [
+      "kun tam ngaan [gìi moong]?",
+      "คุณทำงานกี่โมง",
+      "What time do you work?"
+    ],
+    [
+      "kun fang pleeng [dtɔɔn nǎi]?",
+      "คุณฟังเพลงตอนไหน",
+      "When do you listen to music?"
+    ],
+    [
+      "chán fang pleeng [bàai] 2 moong",
+      "ฉันฟังเพลงบ่าย 2 โมง",
+      "I listen to music at 2 p.m."
+    ],
+    [
+      "káo gin kâao cháao 7 moong [krʉ̂ng]",
+      "เขากินข้าวเช้า 7 โมงครึ่ง",
+      "He eats breakfast at 7:30."
+    ],
+    [
+      "chán bpai rian paasǎa tai [tîang]",
+      "ฉันไปเรียนภาษาไทยเที่ยง",
+      "I go to Thai class at noon."
+    ],
+    [
+      "káo lə̂ək ngaan dtɔɔn dʉ̀k, [3 tûm] 5 naatii",
+      "เขาเลิกงานตอนดึก 3 ทุ่ม 5 นาที",
+      "He finishes work late, at 9:05 p.m."
+    ],
+    [
+      "mʉ̂akʉʉn chán nɔɔn [dtii 2]",
+      "เมื่อคืนฉันนอนตี 2",
+      "Last night I went to bed at 2 a.m."
+    ]
   ],
   "qa": [
-    {"ctx": "⏰ Your alarm rings at 6:30 a.m.", "q": "kun dtʉ̀ʉn gìi moong?", "a": "chán dtʉ̀ʉn 6 moong krʉ̂ng"},
-    {"ctx": "🏊 You swim every evening.", "q": "kun wâai náam dtɔɔn nǎi?", "a": "chán wâai náam dtɔɔn kâm"},
-    {"ctx": "💼 Your friend finishes work at 5 p.m.", "q": "pʉ̂an kɔ̌ɔng kun lə̂ək ngaan gìi moong?", "a": "káo lə̂ək ngaan 5 moong yen"},
-    {"ctx": "🌙 Last night you went to bed at 11 p.m.", "q": "mʉ̂akʉʉn kun nɔɔn gìi moong?", "a": "mʉ̂akʉʉn chán nɔɔn 5 tûm"}
+    {
+      "ctx": "⏰ Your alarm rings at 6:30 a.m.",
+      "q": "kun dtʉ̀ʉn gìi moong?",
+      "a": "chán dtʉ̀ʉn 6 moong krʉ̂ng"
+    },
+    {
+      "ctx": "🏊 You swim every evening.",
+      "q": "kun wâai náam dtɔɔn nǎi?",
+      "a": "chán wâai náam dtɔɔn kâm"
+    },
+    {
+      "ctx": "💼 Your friend finishes work at 5 p.m.",
+      "q": "pʉ̂an kɔ̌ɔng kun lə̂ək ngaan gìi moong?",
+      "a": "káo lə̂ək ngaan 5 moong yen"
+    },
+    {
+      "ctx": "🌙 Last night you went to bed at 11 p.m.",
+      "q": "mʉ̂akʉʉn kun nɔɔn gìi moong?",
+      "a": "mʉ̂akʉʉn chán nɔɔn 5 tûm"
+    }
   ]
 }
