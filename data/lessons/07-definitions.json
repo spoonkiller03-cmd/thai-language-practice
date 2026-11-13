@@ -1,0 +1,52 @@
+{
+  "id": "definitions",
+  "title": "Defining & translating (kʉʉ, bplɛɛ-wâa, mǎaikwaam-wâa)",
+  "source": "Journey 2 · homework around ch. 26–28",
+  "notes": [
+    "A kʉʉ B = A is B (defining/identifying): Latte kʉʉ gaafɛɛ.",
+    "'X' paasǎa anggrìt bplɛɛ-wâa arai? = what does X mean in English?",
+    "'X' mǎaikwaam-wâa yangngai? = what does X mean (what's the idea)?"
+  ],
+  "generators": ["meaning"],
+  "vocab": [
+    ["kʉʉ", "คือ", "is (defining: X is a …)"],
+    ["bplɛɛ-wâa", "แปลว่า", "means, translates as"],
+    ["mǎaikwaam-wâa", "หมายความว่า", "means (the idea is)"],
+    ["paasǎa anggrìt", "ภาษาอังกฤษ", "English (language)"],
+    ["pǒnlamáai", "ผลไม้", "fruit"],
+    ["dtɛɛngmoo", "แตงโม", "watermelon"],
+    ["kâang nai", "ข้างใน", "inside"],
+    ["sǐi dɛɛng", "สีแดง", "red"],
+    ["wǎan", "หวาน", "sweet"],
+    ["hâang", "ห้าง", "shopping mall"],
+    ["mʉʉtʉ̌ʉ", "มือถือ", "mobile phone"],
+    ["aahǎan yîibpùn", "อาหารญี่ปุ่น", "Japanese food"],
+    ["sà-tǎanii", "สถานี", "station"],
+    ["gaafɛɛ", "กาแฟ", "coffee"],
+    ["jing lə̌ə?", "จริงเหรอ", "really?"],
+    ["sǔai", "สวย", "beautiful, pretty"],
+    ["arɔ̀i", "อร่อย", "delicious"],
+    ["sɔ̌ɔn", "สอน", "to teach"],
+    ["yài", "ใหญ่", "big"]
+  ],
+  "sentences": [
+    ["dtɛɛngmoo [kʉʉ] pǒnlamáai kâang nai sǐi dɛɛng wǎan-wǎan", "แตงโมคือผลไม้ข้างในสีแดงหวานๆ", "A watermelon is a fruit that's red and sweet inside."],
+    ["Terminal 21 kʉʉ [hâang] nai grungtêep", "เทอร์มินอล 21 คือห้างในกรุงเทพ", "Terminal 21 is a mall in Bangkok."],
+    ["iPhone kʉʉ [mʉʉtʉ̌ʉ]", "ไอโฟนคือมือถือ", "An iPhone is a mobile phone."],
+    ["Sushi kʉʉ [aahǎan yîibpùn]", "ซูชิคืออาหารญี่ปุ่น", "Sushi is Japanese food."],
+    ["Nana kʉʉ [sà-tǎanii] BTS", "นานาคือสถานีบีทีเอส", "Nana is a BTS station."],
+    ["Latte kʉʉ [gaafɛɛ]", "ลาเต้คือกาแฟ", "A latte is coffee."],
+    ["'chɔ̂ɔp' paasǎa anggrìt [bplɛɛ-wâa] 'like'", "'ชอบ' ภาษาอังกฤษแปลว่า like", "'chɔ̂ɔp' in English means 'like'."],
+    ["'jing lə̌ə' [mǎaikwaam-wâa] 'really?'", "'จริงเหรอ' หมายความว่า really", "'jing lə̌ə' means 'really?'"],
+    ["'kun [sǔai] mâak' mǎaikwaam-wâa 'you are very pretty'", "'คุณสวยมาก' หมายความว่า you are very pretty", "'kun sǔai mâak' means 'you are very pretty'."],
+    ["'pǒnlamáai' [paasǎa anggrìt] bplɛɛ-wâa 'fruit'", "'ผลไม้' ภาษาอังกฤษแปลว่า fruit", "'pǒnlamáai' in English means 'fruit'."],
+    ["kruu kʉʉ kon tîi [sɔ̌ɔn] nákrian", "ครูคือคนที่สอนนักเรียน", "A teacher is a person who teaches students."],
+    ["Siam Paragon kʉʉ hâang tîi [yài] mâak", "สยามพารากอนคือห้างที่ใหญ่มาก", "Siam Paragon is a very big mall."],
+    ["'arɔ̀i' paasǎa anggrìt bplɛɛ-wâa arai?", "'อร่อย' ภาษาอังกฤษแปลว่าอะไร", "What does 'arɔ̀i' mean in English?"]
+  ],
+  "qa": [
+    {"ctx": "🤔 A friend asks what 'arɔ̀i' means.", "q": "'arɔ̀i' paasǎa anggrìt bplɛɛ-wâa arai?", "a": "'arɔ̀i' paasǎa anggrìt bplɛɛ-wâa 'delicious'"},
+    {"ctx": "☕ Explain what a latte is.", "q": "Latte kʉʉ arai?", "a": "Latte kʉʉ gaafɛɛ"},
+    {"ctx": "🍉 Describe a watermelon.", "q": "dtɛɛngmoo kʉʉ arai?", "a": "dtɛɛngmoo kʉʉ pǒnlamáai kâang nai sǐi dɛɛng wǎan-wǎan"}
+  ]
+}

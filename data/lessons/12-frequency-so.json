@@ -1,0 +1,52 @@
+{
+  "id": "frequency-so",
+  "title": "How often? & so… (bɔ̀i kɛ̂ɛnǎi, gɔ̂ɔləəi)",
+  "source": "Journey 2 · homework after ch. 29",
+  "notes": [
+    "… bɔ̀i kɛ̂ɛnǎi? = how often …? Answer: bɔ̀i-bɔ̀i (often), dtalɔ̀ɔt (all the time), mâi kɔ̂i … (not really), mâi … ləəi (never at all).",
+    "A, gɔ̂ɔləəi B = A, so B: chán yàak pûut paasǎa tai gèng, gɔ̂ɔləəi rian túk wan.",
+    "The subject can go before gɔ̂ɔləəi: chán gɔ̂ɔləəi …"
+  ],
+  "vocab": [
+    ["bɔ̀i kɛ̂ɛnǎi", "บ่อยแค่ไหน", "how often?"],
+    ["bɔ̀i-bɔ̀i", "บ่อยๆ", "often"],
+    ["mâi kɔ̂i", "ไม่ค่อย", "not really, rarely"],
+    ["mâi … ləəi", "ไม่ … เลย", "not … at all"],
+    ["dtalɔ̀ɔt", "ตลอด", "all the time"],
+    ["eeng", "เอง", "by yourself"],
+    ["ngûang nɔɔn", "ง่วงนอน", "sleepy"],
+    ["kam mâi dii", "คำไม่ดี", "bad words"],
+    ["ngən sòt", "เงินสด", "cash"],
+    ["sʉ́ʉ kɔ̌ɔng", "ซื้อของ", "to go shopping"],
+    ["kàat rian", "ขาดเรียน", "to miss class"],
+    ["gɔ̂ɔləəi", "ก็เลย", "so, that's why"],
+    ["kanǒm", "ขนม", "snack, dessert"],
+    ["kɔ̌ɔng wǎan", "ของหวาน", "sweets"],
+    ["kui gàp", "คุยกับ", "to chat with"],
+    ["nák-sadɛɛng", "นักแสดง", "actor"],
+    ["nák-dtên", "นักเต้น", "dancer"],
+    ["mii chʉ̂ʉ sǐang", "มีชื่อเสียง", "famous"],
+    ["bpratêet", "ประเทศ", "country"]
+  ],
+  "sentences": [
+    ["tîi bpratêet tai, kun tam aahǎan eeng [bɔ̀i kɛ̂ɛnǎi]?", "ที่ประเทศไทย คุณทำอาหารเองบ่อยแค่ไหน", "In Thailand, how often do you cook for yourself?"],
+    ["tîi bpratêet tai, chán tam aahǎan [dtalɔ̀ɔt] kâ", "ที่ประเทศไทย ฉันทำอาหารตลอดค่ะ", "In Thailand, I cook all the time."],
+    ["dtɔɔn rian paasǎa tai chán [mâi kɔ̂i] ngûang nɔɔn", "ตอนเรียนภาษาไทยฉันไม่ค่อยง่วงนอน", "When I study Thai, I'm not usually sleepy."],
+    ["chán pûut kam mâi dii [bɔ̀i-bɔ̀i]", "ฉันพูดคำไม่ดีบ่อยๆ", "I say bad words often."],
+    ["weelaa chán sʉ́ʉ kɔ̌ɔng, chán chái [ngən sòt] bɔ̀i-bɔ̀i", "เวลาฉันซื้อของ ฉันใช้เงินสดบ่อยๆ", "When I go shopping, I often use cash."],
+    ["dtɔɔn Journey 1 chán mâi kàat rian [ləəi]", "ตอน Journey 1 ฉันไม่ขาดเรียนเลย", "During Journey 1, I didn't miss a single class."],
+    ["chán yàak pûut paasǎa tai gèng, [gɔ̂ɔləəi] rian túk wan", "ฉันอยากพูดภาษาไทยเก่ง ก็เลยเรียนทุกวัน", "I want to speak Thai well, so I study every day."],
+    ["chán chɔ̂ɔp kɔ̌ɔng wǎan, chán gɔ̂ɔləəi gin [kanǒm] bɔ̀i-bɔ̀i", "ฉันชอบของหวาน ฉันก็เลยกินขนมบ่อยๆ", "I like sweets, so I eat snacks a lot."],
+    ["chán yàak [kui gàp] nák-sadɛɛng tai, gɔ̂ɔləəi rian paasǎa tai", "ฉันอยากคุยกับนักแสดงไทย ก็เลยเรียนภาษาไทย", "I want to chat with Thai actors, so I'm learning Thai."],
+    ["chán bpai tîao bɔ̀i-bɔ̀i, gɔ̂ɔləəi kəəi bpai [lǎai] bpratêet", "ฉันไปเที่ยวบ่อยๆ ก็เลยเคยไปหลายประเทศ", "I travel a lot, so I've been to many countries."],
+    ["nɔ́ɔng sǎao yàak bpen nák-dtên tîi [mii chʉ̂ʉ sǐang], káo gɔ̂ɔləəi rian dtên hip-hop", "น้องสาวอยากเป็นนักเต้นที่มีชื่อเสียง เขาก็เลยเรียนเต้นฮิปฮอป", "My younger sister wants to be a famous dancer, so she's learning hip-hop."],
+    ["fǒn dtòk, chán gɔ̂ɔləəi mâi bpai [fítnèet]", "ฝนตก ฉันก็เลยไม่ไปฟิตเนส", "It's raining, so I'm not going to the gym."],
+    ["kun bpai fítnèet [bɔ̀i kɛ̂ɛnǎi]?", "คุณไปฟิตเนสบ่อยแค่ไหน", "How often do you go to the gym?"]
+  ],
+  "qa": [
+    {"ctx": "💵 You almost always pay with cash.", "q": "kun chái ngən sòt bɔ̀i kɛ̂ɛnǎi?", "a": "chán chái ngən sòt bɔ̀i-bɔ̀i"},
+    {"ctx": "🌧️ It's raining, so you're staying home.", "q": "tammai kun mâi bpai fítnèet?", "a": "fǒn dtòk, chán gɔ̂ɔləəi mâi bpai"},
+    {"ctx": "😪 You're rarely sleepy in class.", "q": "dtɔɔn rian kun ngûang nɔɔn bɔ̀i kɛ̂ɛnǎi?", "a": "chán mâi kɔ̂i ngûang nɔɔn"},
+    {"ctx": "🍰 You love sweets, so you eat snacks a lot.", "q": "kun gin kanǒm bɔ̀i kɛ̂ɛnǎi?", "a": "chán chɔ̂ɔp kɔ̌ɔng wǎan, gɔ̂ɔləəi gin kanǒm bɔ̀i-bɔ̀i"}
+  ]
+}

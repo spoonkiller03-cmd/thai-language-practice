@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "lessons": [
+    "01-time-routine.json",
+    "02-days-schedules.json",
+    "03-hai-requests.json",
+    "04-experience-duration.json",
+    "05-health-body.json",
+    "06-reported-speech.json",
+    "07-definitions.json",
+    "08-hai-result.json",
+    "09-dates-years.json",
+    "10-why-because.json",
+    "11-ordinals-quantities.json",
+    "12-frequency-so.json",
+    "13-feelings-more-all.json"
+  ]
+}

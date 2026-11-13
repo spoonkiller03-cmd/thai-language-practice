@@ -1,0 +1,52 @@
+{
+  "id": "hai-requests",
+  "title": "Doing things for someone (hâi) & polite requests",
+  "source": "Journey 2 · homework between ch. 21 and 24",
+  "notes": [
+    "Verb + hâi + someone = do it for someone: pǒm tam aahǎan hâi fɛɛn.",
+    "kɔ̌ɔ … nɔ̀i = may I / can I have … (asking for yourself): kɔ̌ɔ bpai hɔ̂ng náam nɔ̀i.",
+    "chûai … nɔ̀i = please do … (asking someone else to do it): chûai bpə̀ət ɛɛ nɔ̀i."
+  ],
+  "vocab": [
+    ["hâi", "ให้", "for (someone); to give"],
+    ["tam kwaam sà-àat", "ทำความสะอาด", "to clean"],
+    ["ùn", "อุ่น", "to heat up, warm"],
+    ["kàp rót", "ขับรถ", "to drive"],
+    ["hɔ̂ng", "ห้อง", "room"],
+    ["hɔ̂ng náam", "ห้องน้ำ", "bathroom, toilet"],
+    ["kɔ̌ɔ … nɔ̀i", "ขอ … หน่อย", "may I … / can I have … (for yourself)"],
+    ["chûai … nɔ̀i", "ช่วย … หน่อย", "please … (asking someone to do it)"],
+    ["jàai", "จ่าย", "to pay"],
+    ["bàt", "บัตร", "card"],
+    ["bpə̀ət", "เปิด", "to open, turn on"],
+    ["bpìt", "ปิด", "to close, turn off"],
+    ["ɛɛ", "แอร์", "air conditioning"],
+    ["náam", "น้ำ", "water"],
+    ["cháa-cháa", "ช้าๆ", "slowly"],
+    ["nɔ́ɔng sǎao", "น้องสาว", "younger sister"],
+    ["mɛ̂ɛbâan", "แม่บ้าน", "housekeeper"],
+    ["túk wan tammadaa", "ทุกวันธรรมดา", "every weekday"]
+  ],
+  "sentences": [
+    ["pǒm tam aahǎan [hâi] fɛɛn túk wan", "ผมทำอาหารให้แฟนทุกวัน", "I cook for my partner every day."],
+    ["chán tam aahǎan hâi [nɔ́ɔng sǎao] túk wan tammadaa", "ฉันทำอาหารให้น้องสาวทุกวันธรรมดา", "I cook for my younger sister every weekday."],
+    ["mɛ̂ɛbâan [tam kwaam sà-àat] bâan hâi chán", "แม่บ้านทำความสะอาดบ้านให้ฉัน", "The housekeeper cleans the house for me."],
+    ["fɛɛn [kàp rót] hâi chán", "แฟนขับรถให้ฉัน", "My partner drives for me."],
+    ["[chûai] ùn aahǎan hâi mɛ̂ɛ nɔ̀i", "ช่วยอุ่นอาหารให้แม่หน่อย", "Please heat up the food for Mom."],
+    ["[kɔ̌ɔ] bpai hɔ̂ng náam nɔ̀i kráp", "ขอไปห้องน้ำหน่อยครับ", "May I go to the bathroom?"],
+    ["chûai tam kwaam sà-àat [hɔ̂ng] nɔ̀i ná", "ช่วยทำความสะอาดห้องหน่อยนะ", "Please clean your room."],
+    ["kɔ̌ɔ [jàai] bpen bàt nɔ̀i kâ", "ขอจ่ายเป็นบัตรหน่อยค่ะ", "Can I pay by card, please?"],
+    ["chûai [bpə̀ət] ɛɛ nɔ̀i kâ", "ช่วยเปิดแอร์หน่อยค่ะ", "Please turn on the AC."],
+    ["chûai [bpìt] ɛɛ nɔ̀i kâ", "ช่วยปิดแอร์หน่อยค่ะ", "Please turn off the AC."],
+    ["kɔ̌ɔ [náam] nɔ̀i kâ", "ขอน้ำหน่อยค่ะ", "Can I have some water, please?"],
+    ["pʉ̂an sʉ́ʉ gaafɛɛ [hâi] chán", "เพื่อนซื้อกาแฟให้ฉัน", "My friend buys coffee for me."],
+    ["chûai pûut [cháa-cháa] nɔ̀i kâ", "ช่วยพูดช้าๆหน่อยค่ะ", "Please speak slowly."]
+  ],
+  "qa": [
+    {"ctx": "💳 You're paying at a shop but you only have a card.", "q": "", "a": "kɔ̌ɔ jàai bpen bàt nɔ̀i kâ"},
+    {"ctx": "🥵 The room is hot. Ask your friend to turn on the AC.", "q": "", "a": "chûai bpə̀ət ɛɛ nɔ̀i kâ"},
+    {"ctx": "🚻 You're in class and need the bathroom.", "q": "", "a": "kɔ̌ɔ bpai hɔ̂ng náam nɔ̀i kâ"},
+    {"ctx": "🗣️ Someone is talking too fast for you.", "q": "", "a": "chûai pûut cháa-cháa nɔ̀i kâ"},
+    {"ctx": "🥤 You're at a restaurant and want water.", "q": "", "a": "kɔ̌ɔ náam nɔ̀i kâ"}
+  ]
+}

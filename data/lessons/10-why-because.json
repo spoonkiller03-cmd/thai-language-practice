@@ -1,0 +1,39 @@
+{
+  "id": "why-because",
+  "title": "Why? Because… (tammai – prɔ́-wâa)",
+  "source": "Journey 2 · Chapter 29",
+  "notes": [
+    "tammai goes at the start (or end) of the question: tammai kun rian paasǎa tai?",
+    "Answer with prɔ́-wâa … (or just prɔ́ …): prɔ́-wâa chán chɔ̂ɔp bpratêet tai."
+  ],
+  "vocab": [
+    ["tammai", "ทำไม", "why?"],
+    ["prɔ́-wâa", "เพราะว่า", "because"],
+    ["dtàtsǐn jai", "ตัดสินใจ", "to decide"],
+    ["chái chiiwít", "ใช้ชีวิต", "to live (your life)"],
+    ["bpratêet tai", "ประเทศไทย", "Thailand"],
+    ["jai dii", "ใจดี", "kind"],
+    ["rə̂əm", "เริ่ม", "to start"],
+    ["dèk", "เด็ก", "child"],
+    ["aasǎi yùu", "อาศัยอยู่", "to live (reside)"],
+    ["sàdùak", "สะดวก", "convenient"],
+    ["roongrian", "โรงเรียน", "school"]
+  ],
+  "sentences": [
+    ["[tammai] kun dtàtsǐn jai maa chái chiiwít tîi bpratêet tai?", "ทำไมคุณตัดสินใจมาใช้ชีวิตที่ประเทศไทย", "Why did you decide to come and live in Thailand?"],
+    ["[prɔ́-wâa] chán chɔ̂ɔp bpratêet tai, kon tai jai dii, aahǎan arɔ̀i", "เพราะว่าฉันชอบประเทศไทย คนไทยใจดี อาหารอร่อย", "Because I like Thailand, Thai people are kind and the food is delicious."],
+    ["prɔ́-wâa roongrian níi [sɔ̌ɔn] dii mâak", "เพราะว่าโรงเรียนนี้สอนดีมาก", "Because this school teaches really well."],
+    ["prɔ́-wâa chán [rə̂əm] rian weelaa chán bpen dèk", "เพราะว่าฉันเริ่มเรียนเวลาฉันเป็นเด็ก", "Because I started learning when I was a child."],
+    ["tammai kun dtàtsǐn jai [aasǎi yùu] nai grungtêep?", "ทำไมคุณตัดสินใจอาศัยอยู่ในกรุงเทพ", "Why did you decide to live in Bangkok?"],
+    ["prɔ́-wâa grungtêep [sàdùak] mâak", "เพราะว่ากรุงเทพสะดวกมาก", "Because Bangkok is very convenient."],
+    ["tammai kun mâi maa rian mʉ̂awaan? — prɔ́-wâa chán [mâi sabaai]", "ทำไมคุณไม่มาเรียนเมื่อวาน — เพราะว่าฉันไม่สบาย", "Why didn't you come to class yesterday? — Because I was sick."],
+    ["káo nɔɔn mâi làp [prɔ́-wâa] gin gaafɛɛ yə́ə gəənbpai", "เขานอนไม่หลับเพราะว่ากินกาแฟเยอะเกินไป", "He can't sleep because he drank too much coffee."],
+    ["tammai kun pûut paasǎa anggrìt [dâai]?", "ทำไมคุณพูดภาษาอังกฤษได้", "How come you can speak English?"]
+  ],
+  "qa": [
+    {"ctx": "🤒 You missed class yesterday because you were sick.", "q": "tammai kun mâi maa rian mʉ̂awaan?", "a": "prɔ́-wâa chán mâi sabaai"},
+    {"ctx": "📚 Give your real reason.", "q": "tammai kun rian paasǎa tai?", "a": "prɔ́-wâa chán yàak pûut paasǎa tai gèng (any reason works)"},
+    {"ctx": "🏙️ You live in Bangkok because it's convenient.", "q": "tammai kun yùu grungtêep?", "a": "prɔ́-wâa grungtêep sàdùak mâak"},
+    {"ctx": "☕ Your friend can't sleep. You know they drank a lot of coffee.", "q": "tammai káo nɔɔn mâi làp?", "a": "prɔ́-wâa káo gin gaafɛɛ yə́ə gəənbpai"}
+  ]
+}

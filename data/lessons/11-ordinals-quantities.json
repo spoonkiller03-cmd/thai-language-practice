@@ -1,0 +1,57 @@
+{
+  "id": "ordinals-quantities",
+  "title": "First, second… & every / many / some / each",
+  "source": "Journey 2 · homework after ch. 29",
+  "notes": [
+    "Ordinal = noun + classifier + tîi + number: mɛɛo dtua tîi 1 (the first cat), kon tîi 3 (the third person).",
+    "Quantity words go BEFORE the classifier: dèk túk kon (every kid), dèk lǎai kon (many kids), dèk baang kon (some kids), dèk mâi gìi kon (only a few kids).",
+    "dtɛ̀ɛlá goes before the noun: dèk dtɛ̀ɛlá kon (each kid)."
+  ],
+  "generators": ["ordinal"],
+  "vocab": [
+    ["tîi", "ที่", "-th (tîi 1 = first)"],
+    ["dtua", "ตัว", "classifier for animals"],
+    ["kon", "คน", "person; classifier for people"],
+    ["sǐi kǎao", "สีขาว", "white"],
+    ["nom", "นม", "milk"],
+    ["lên", "เล่น", "to play"],
+    ["nǔu", "หนู", "mouse"],
+    ["nâa-rák", "น่ารัก", "cute"],
+    ["tîisùt", "ที่สุด", "the most"],
+    ["túk", "ทุก", "every, all"],
+    ["lǎai", "หลาย", "many, several"],
+    ["baang", "บาง", "some"],
+    ["mâi gìi", "ไม่กี่", "only a few"],
+    ["dtɛ̀ɛlá", "แต่ละ", "each"],
+    ["sài", "ใส่", "to wear, put on"],
+    ["gaanggeeng", "กางเกง", "trousers"],
+    ["sǐi fáa", "สีฟ้า", "light blue"],
+    ["pûuchaai", "ผู้ชาย", "man, boy"],
+    ["pûuyǐng", "ผู้หญิง", "woman, girl"],
+    ["lûuk bɔn", "ลูกบอล", "ball"],
+    ["yím", "ยิ้ม", "to smile"],
+    ["chʉ̂ʉ", "ชื่อ", "to be called; name"],
+    ["kráng", "ครั้ง", "time (occurrence)"]
+  ],
+  "sentences": [
+    ["mɛɛo dtua [tîi] 1 sǐi kǎao", "แมวตัวที่ 1 สีขาว", "The first cat is white."],
+    ["mɛɛo dtua tîi 2 gin [nom]", "แมวตัวที่ 2 กินนม", "The second cat drinks milk."],
+    ["mɛɛo dtua tîi 5 chɔ̂ɔp [lên] gàp nǔu", "แมวตัวที่ 5 ชอบเล่นกับหนู", "The fifth cat likes playing with the mouse."],
+    ["mɛɛo dtua tîi 4 nâa-rák [tîisùt]", "แมวตัวที่ 4 น่ารักที่สุด", "The fourth cat is the cutest."],
+    ["mɛɛo dtua tîi 3 [chʉ̂ʉ] Cookies", "แมวตัวที่ 3 ชื่อคุกกี้", "The third cat is called Cookies."],
+    ["dèk [túk] kon sài gaanggeeng sǐi fáa", "เด็กทุกคนใส่กางเกงสีฟ้า", "All the kids are wearing blue trousers."],
+    ["dèk [lǎai] kon bpen pûuchaai", "เด็กหลายคนเป็นผู้ชาย", "Many of the kids are boys."],
+    ["dèk [baang] kon bpen pûuyǐng", "เด็กบางคนเป็นผู้หญิง", "Some of the kids are girls."],
+    ["dèk [mâi gìi] kon mii lûuk bɔn", "เด็กไม่กี่คนมีลูกบอล", "Only a few kids have a ball."],
+    ["dèk [dtɛ̀ɛlá] kon yím", "เด็กแต่ละคนยิ้ม", "Each kid is smiling."],
+    ["nákrian túk kon chɔ̂ɔp [kruu]", "นักเรียนทุกคนชอบครู", "All the students like the teacher."],
+    ["chán kəəi bpai puugèt [lǎai] kráng", "ฉันเคยไปภูเก็ตหลายครั้ง", "I've been to Phuket many times."],
+    ["[baang] wan chán mâi yàak tam ngaan", "บางวันฉันไม่อยากทำงาน", "Some days I don't feel like working."],
+    ["kon tîi 3 [kʉʉ] fɛɛn chán", "คนที่ 3 คือแฟนฉัน", "The third person is my partner."]
+  ],
+  "qa": [
+    {"ctx": "🐱🐱🐱 You have 3 cats. The 2nd one is the cutest.", "q": "mɛɛo dtua nǎi nâa-rák tîisùt?", "a": "mɛɛo dtua tîi 2 nâa-rák tîisùt"},
+    {"ctx": "🧑‍🎓 Every student in your class likes the teacher.", "q": "nákrian chɔ̂ɔp kruu mái?", "a": "nákrian túk kon chɔ̂ɔp kruu"},
+    {"ctx": "🏝️ You've been to Phuket many times.", "q": "kun kəəi bpai puugèt mái?", "a": "kəəi kâ, chán kəəi bpai puugèt lǎai kráng"}
+  ]
+}

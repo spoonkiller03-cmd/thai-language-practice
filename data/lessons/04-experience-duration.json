@@ -1,0 +1,58 @@
+{
+  "id": "experience-duration",
+  "title": "Have you ever…? How long? (kəəi, naan, lɛ́ɛo)",
+  "source": "Journey 2 · Chapter 24",
+  "notes": [
+    "kəəi + verb = have ever done: kun kəəi gin malɛɛng mái? → kəəi / mâi kəəi.",
+    "verb + naan + time = for (time): rian naan 2 chûamoong.",
+    "verb + maa naan + time + lɛ́ɛo = have been doing it for (time): mâi sabaai maa naan 2 wan lɛ́ɛo.",
+    "naan tâorài lɛ́ɛo? = how long (so far)? · dtângdtɛ̀ɛ mʉ̂arài? = since when?",
+    "… lɛ́ɛo rʉ́ yang? = … yet? → … lɛ́ɛo (already) / yang mâi … (not yet)."
+  ],
+  "generators": ["duration"],
+  "vocab": [
+    ["kəəi", "เคย", "to have ever (done)"],
+    ["mâi kəəi", "ไม่เคย", "never (have done)"],
+    ["rɔ́ɔng hâi", "ร้องไห้", "to cry"],
+    ["lǎng jàak", "หลังจาก", "after"],
+    ["malɛɛng", "แมลง", "insect"],
+    ["naan tâorài", "นานเท่าไร", "how long?"],
+    ["chûamoong", "ชั่วโมง", "hour"],
+    ["dʉan", "เดือน", "month"],
+    ["bpii", "ปี", "year"],
+    ["lɛ́ɛo", "แล้ว", "already"],
+    ["rʉ́ yang", "หรือยัง", "… yet?"],
+    ["yang mâi", "ยังไม่", "not yet"],
+    ["mâi sabaai", "ไม่สบาย", "sick, unwell"],
+    ["roong-payaabaan", "โรงพยาบาล", "hospital"],
+    ["dtɛ̀ngngaan", "แต่งงาน", "to get married"],
+    ["rɔɔ", "รอ", "to wait"],
+    ["àap náam", "อาบน้ำ", "to shower, bathe"],
+    ["sùup burìi", "สูบบุหรี่", "to smoke"],
+    ["fʉ̀k", "ฝึก", "to practise, train"],
+    ["muai tai", "มวยไทย", "Muay Thai"]
+  ],
+  "sentences": [
+    ["kun [kəəi] gin malɛɛng mái?", "คุณเคยกินแมลงไหม", "Have you ever eaten insects?"],
+    ["chán [mâi kəəi] rɔ́ɔng hâi lǎng jàak rian paasǎa tai", "ฉันไม่เคยร้องไห้หลังจากเรียนภาษาไทย", "I've never cried after studying Thai."],
+    ["túk wan rao rian paasǎa tai [naan] 2 chûamoong", "ทุกวันเราเรียนภาษาไทยนาน 2 ชั่วโมง", "Every day we study Thai for 2 hours."],
+    ["kun-Ken kəəi fʉ̀k muai tai tîi puugèt naan 5 [dʉan]", "คุณเคนเคยฝึกมวยไทยที่ภูเก็ตนาน 5 เดือน", "Ken once trained Muay Thai in Phuket for 5 months."],
+    ["káo mâi sabaai maa naan 2 wan [lɛ́ɛo]", "เขาไม่สบายมานาน 2 วันแล้ว", "He has been sick for 2 days now."],
+    ["káo bpai roong-payaabaan lɛ́ɛo [rʉ́ yang]?", "เขาไปโรงพยาบาลแล้วหรือยัง", "Has he gone to the hospital yet?"],
+    ["káo [yang mâi] bpai roong-payaabaan", "เขายังไม่ไปโรงพยาบาล", "He hasn't gone to the hospital yet."],
+    ["káo [dtɛ̀ngngaan] gan maa naan 40 bpii lɛ́ɛo", "เขาแต่งงานกันมานาน 40 ปีแล้ว", "They have been married for 40 years."],
+    ["káo dtɛ̀ngngaan gan [dtângdtɛ̀ɛ] bpii 1983", "เขาแต่งงานกันตั้งแต่ปี 1983", "They have been married since 1983."],
+    ["káo [rɔɔ] fɛɛn àap náam maa naan 1 chûamoong 15 naatii lɛ́ɛo", "เขารอแฟนอาบน้ำมานาน 1 ชั่วโมง 15 นาทีแล้ว", "He's been waiting for his partner to shower for 1 hour 15 minutes."],
+    ["káo [sùup burìi] maa naan 15 naatii lɛ́ɛo", "เขาสูบบุหรี่มานาน 15 นาทีแล้ว", "He has been smoking for 15 minutes."],
+    ["kun rian paasǎa tai maa [naan tâorài] lɛ́ɛo?", "คุณเรียนภาษาไทยมานานเท่าไรแล้ว", "How long have you been studying Thai?"],
+    ["kun gin kâao lɛ́ɛo rʉ́ yang? — [yang] kâ", "คุณกินข้าวแล้วหรือยัง — ยังค่ะ", "Have you eaten yet? — Not yet."],
+    ["kun kəəi bpai Chiang Mai mái? — [kəəi] kâ", "คุณเคยไปเชียงใหม่ไหม — เคยค่ะ", "Have you been to Chiang Mai? — Yes, I have."]
+  ],
+  "qa": [
+    {"ctx": "🦗 You have never eaten insects.", "q": "kun kəəi gin malɛɛng mái?", "a": "mâi kəəi kâ"},
+    {"ctx": "🍜 You haven't eaten yet.", "q": "kun gin kâao lɛ́ɛo rʉ́ yang?", "a": "yang kâ / yang mâi gin kâ"},
+    {"ctx": "⏳ You've been waiting for 20 minutes.", "q": "kun rɔɔ maa naan tâorài lɛ́ɛo?", "a": "chán rɔɔ maa naan 20 naatii lɛ́ɛo"},
+    {"ctx": "🤒 You've been sick since Monday.", "q": "kun mâi sabaai maa dtângdtɛ̀ɛ mʉ̂arài?", "a": "chán mâi sabaai maa dtângdtɛ̀ɛ wan jan"},
+    {"ctx": "🏝️ You've been to Phuket before.", "q": "kun kəəi bpai puugèt mái?", "a": "kəəi kâ"}
+  ]
+}
