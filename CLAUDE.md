@@ -17,7 +17,7 @@ A static PWA (no build step) hosted on GitHub Pages from `main`. The owner sends
 - Tones: mid unmarked, low à, falling â, high á, rising ǎ (on the first vowel letter).
 - Numbers are written as digits (8 moong 25 naatii).
 - Follow the printed worksheets over handwriting. Hyphens and spaces are ignored by the answer checker.
-- Spellings are checked against the book glossary (Journey 1–3 vocab pages, pp. 158–174). The glossary wins over Claude's guesses. Where the homework print differs (e.g. fítnèet vs glossary fítnèt), keep the homework form. Still unconfirmed: cháa-cháa, níu.
+- Spellings are checked against the book glossary (Journey 1–3 vocab pages, pp. 158–174). The glossary wins over Claude's guesses. Where the homework print differs (e.g. fítnèet vs glossary fítnèt), keep the homework form. Still unconfirmed: cháa-cháa, níu, too (โทร), jai-diao, kɔ́ɔt, rôm, tan, bao-wǎan, rót dtìt.
 
 ## Rules for new content
 - Use the homework sentences, and also write NEW varied sentences that recombine the vocabulary across lessons. The owner memorises worksheet answers, so the variety is the point.

@@ -1,0 +1,48 @@
+{
+  "id": "taotii-diao",
+  "title": "As much as … (tâotîi) & … or else (dǐao … gɔ̂ɔ)",
+  "source": "Journey 3 · Chapter 43",
+  "notes": [
+    "A tâotîi B = do A as much as B allows: ɔ̀ɔk gamlang gaai tâotîi mii weelaa (exercise whenever I have time) · sʉ́ʉ kɔ̌ɔng tâotîi jam bpen (buy only what's needed).",
+    "tâotîi jam dâai = as far as I remember.",
+    "A, dǐao (subject) gɔ̂ɔ B = keep doing A and soon B will happen. It's a warning: gin kanǒm yə́, dǐao gɔ̂ɔ bpen bao-wǎan.",
+    "dǐao alone = in a moment: rɔɔ dǐao ná (wait a second)."
+  ],
+  "generators": [],
+  "vocab": [
+    ["tâotîi", "เท่าที่", "as much as, as far as"],
+    ["tâotîi mii weelaa", "เท่าที่มีเวลา", "whenever there's time"],
+    ["tâotîi jam dâai", "เท่าที่จำได้", "as far as I remember"],
+    ["tâotîi tam dâai", "เท่าที่ทำได้", "as much as you can"],
+    ["jam bpen", "จำเป็น", "necessary"],
+    ["dǐao … gɔ̂ɔ", "เดี๋ยว…ก็", "(do that and) soon …; or else"],
+    ["dǐao", "เดี๋ยว", "in a moment"],
+    ["bao-wǎan", "เบาหวาน", "diabetes"],
+    ["túrian", "ทุเรียน", "durian"],
+    ["payaayaam", "พยายาม", "to try"],
+    ["lên piano", "เล่นเปียโน", "to play piano"],
+    ["tan", "ทัน", "in time"],
+    ["rôm", "ร่ม", "umbrella"]
+  ],
+  "sentences": [
+    ["ɔ̀ɔk gamlang gaai [tâotîi] mii weelaa", "ออกกำลังกายเท่าที่มีเวลา", "Exercise whenever you have time."],
+    ["sʉ́ʉ kɔ̌ɔng tâotîi [jam bpen]", "ซื้อของเท่าที่จำเป็น", "Buy only what's necessary."],
+    ["payaayaam gin túrian tâotîi [gin dâai]", "พยายามกินทุเรียนเท่าที่กินได้", "Try to eat as much durian as you can."],
+    ["tam ngaan [tâotîi] tam dâai", "ทำงานเท่าที่ทำได้", "Work as much as you can."],
+    ["rian lên piano tâotîi mii [weelaa]", "เรียนเล่นเปียโนเท่าที่มีเวลา", "Take piano lessons whenever there's time."],
+    ["[tâotîi] jam dâai, dtɔɔnnán bpen rʉ́duu rɔ́ɔn", "เท่าที่จำได้ ตอนนั้นเป็นฤดูร้อน", "As far as I remember, it was the hot season then."],
+    ["gin kanǒm yə́, [dǐao] káo gɔ̂ɔ bpen bao-wǎan", "กินขนมเยอะ เดี๋ยวเขาก็เป็นเบาหวาน", "If he eats lots of sweets, he'll end up with diabetes."],
+    ["lên mʉʉtʉ̌ʉ gɔ̀ɔn nɔɔn, dǐao káo [gɔ̂ɔ] nɔɔn mâi làp", "เล่นมือถือก่อนนอน เดี๋ยวเขาก็นอนไม่หลับ", "If he's on his phone before bed, he won't be able to sleep."],
+    ["moohǒo gàp fɛɛn bɔ̀i-bɔ̀i, dǐao fɛɛn gɔ̂ɔ [lə̂ək] gàp káo", "โมโหกับแฟนบ่อยๆ เดี๋ยวแฟนก็เลิกกับเขา", "If he's often angry with his girlfriend, she'll leave him."],
+    ["yàa nɔɔn dʉ̀k, [dǐao] gɔ̂ɔ dtʉ̀ʉn mâi tan", "อย่านอนดึก เดี๋ยวก็ตื่นไม่ทัน", "Don't stay up late, or you won't wake up in time."],
+    ["rîip bpai, dǐao gɔ̂ɔ [sǎai]", "รีบไป เดี๋ยวก็สาย", "Hurry, or you'll be late."],
+    ["ao [rôm] bpai dûai, dǐao fǒn gɔ̂ɔ dtòk", "เอาร่มไปด้วย เดี๋ยวฝนก็ตก", "Take an umbrella; it's going to rain."],
+    ["rɔɔ [dǐao] ná, chán gamlang jà bpai", "รอเดี๋ยวนะ ฉันกำลังจะไป", "Wait a moment, I'm about to go."]
+  ],
+  "qa": [
+    {"ctx": "🍰 Warn a friend who eats too many sweets.", "q": "", "a": "gin kanǒm yə́, dǐao gɔ̂ɔ bpen bao-wǎan"},
+    {"ctx": "🏃 You exercise whenever you have time.", "q": "kun ɔ̀ɔk gamlang gaai bɔ̀i kɛ̂ɛnǎi?", "a": "ɔ̀ɔk gamlang gaai tâotîi mii weelaa"},
+    {"ctx": "⏰ Tell your friend to hurry or they'll be late.", "q": "", "a": "rîip bpai, dǐao gɔ̂ɔ sǎai"},
+    {"ctx": "🛒 You only buy what you need.", "q": "kun sʉ́ʉ kɔ̌ɔng yə́ mái?", "a": "mâi yə́, sʉ́ʉ tâotîi jam bpen"}
+  ]
+}

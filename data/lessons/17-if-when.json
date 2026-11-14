@@ -1,0 +1,47 @@
+{
+  "id": "if-when",
+  "title": "If … then / When … then (tâa … gɔ̂ɔ, pɔɔ … gɔ̂ɔ)",
+  "source": "Journey 2–3 · homework (tâa … gɔ̂ɔ, pɔɔ … gɔ̂ɔ)",
+  "notes": [
+    "tâa A, (subject) gɔ̂ɔ (jà) B = IF A, then B. A may not happen: tâa fǒn dtòk, chán gɔ̂ɔ jà yùu bâan.",
+    "pɔɔ A, (subject) gɔ̂ɔ B = WHEN / as soon as A happens, B. A does happen: pɔɔ tʉ̌ng bâan, chán gɔ̂ɔ àap náam.",
+    "The subject of the second part goes before gɔ̂ɔ."
+  ],
+  "generators": [],
+  "vocab": [
+    ["tâa … gɔ̂ɔ", "ถ้า…ก็", "if … then"],
+    ["pɔɔ … gɔ̂ɔ", "พอ…ก็", "when / as soon as … then"],
+    ["bprayòok", "ประโยค", "sentence"],
+    ["lâo", "เหล้า", "alcohol, liquor"],
+    ["kùat", "ขวด", "bottle"],
+    ["mao", "เมา", "drunk"],
+    ["jam", "จำ", "to remember"],
+    ["lə̂ək gàp fɛɛn", "เลิกกับแฟน", "to break up with a partner"],
+    ["dʉ̀ʉm", "ดื่ม", "to drink"],
+    ["ɔ̀ɔk gamlang gaai", "ออกกำลังกาย", "to exercise"]
+  ],
+  "sentences": [
+    ["[tâa] kruu hâi gaanbâan 20 bprayòok, nákrian gɔ̂ɔ bpùat hǔa", "ถ้าครูให้การบ้าน 20 ประโยค นักเรียนก็ปวดหัว", "If the teacher gives 20 sentences of homework, the students get a headache."],
+    ["tâa gin lâo 10 kùat, káo [gɔ̂ɔ] jà mao", "ถ้ากินเหล้า 10 ขวด เขาก็จะเมา", "If he drinks 10 bottles, he'll get drunk."],
+    ["tâa fɛɛn jam wan gə̀ət kun mâi dâai, kun gɔ̂ɔ jà [sǐajai]", "ถ้าแฟนจำวันเกิดคุณไม่ได้ คุณก็จะเสียใจ", "If your partner can't remember your birthday, you'll be sad."],
+    ["[tâa] wan sǎo fǒn mâi dtòk, chán gɔ̂ɔ jà bpai Siam Square", "ถ้าวันเสาร์ฝนไม่ตก ฉันก็จะไปสยามสแควร์", "If it doesn't rain on Saturday, I'll go to Siam Square."],
+    ["tâa chán sǐajai, chán gɔ̂ɔ [fang pleeng]", "ถ้าฉันเสียใจ ฉันก็ฟังเพลง", "If I'm sad, I listen to music."],
+    ["[pɔɔ] káo lə̂ək gàp fɛɛn, káo gɔ̂ɔ sǐajai lɛ́ dʉ̀ʉm lâo", "พอเขาเลิกกับแฟน เขาก็เสียใจและดื่มเหล้า", "When he broke up with his girlfriend, he was sad and drank."],
+    ["pɔɔ hěn kruu, nákrian [gɔ̂ɔ] bɔ̀ɔk wâa sawàtdii kâ", "พอเห็นครู นักเรียนก็บอกว่าสวัสดีค่ะ", "As soon as she sees the teacher, the student says hello."],
+    ["pɔɔ aagàat rɔ́ɔn kʉ̂n, chán gɔ̂ɔ bpai [wâaináam]", "พออากาศร้อนขึ้น ฉันก็ไปว่ายน้ำ", "When it gets hotter, I go swimming."],
+    ["pɔɔ chán [nɔɔn mâi làp], chán gɔ̂ɔ fang pleeng", "พอฉันนอนไม่หลับ ฉันก็ฟังเพลง", "When I can't sleep, I listen to music."],
+    ["pɔɔ ɔ̀ɔk gamlang gaai sèt, chán gɔ̂ɔ [àap náam]", "พอออกกำลังกายเสร็จ ฉันก็อาบน้ำ", "When I finish exercising, I take a shower."],
+    ["tâa kun mâi kâojai, [gɔ̂ɔ] tǎam kruu ná", "ถ้าคุณไม่เข้าใจ ก็ถามครูนะ", "If you don't understand, ask the teacher."],
+    ["tâa mii weelaa, chán gɔ̂ɔ jà [bpai tîao] puukǎo", "ถ้ามีเวลา ฉันก็จะไปเที่ยวภูเขา", "If I have time, I'll go to the mountains."],
+    ["[pɔɔ] tʉ̌ng bâan, chán gɔ̂ɔ nɔɔn ləəi", "พอถึงบ้าน ฉันก็นอนเลย", "As soon as I get home, I go straight to bed."],
+    ["tâa rót dtìt, rao gɔ̂ɔ jà [kʉ̂n rót fai fáa]", "ถ้ารถติด เราก็จะขึ้นรถไฟฟ้า", "If there's traffic, we'll take the skytrain."],
+    ["pɔɔ lə̂ək ngaan, káo gɔ̂ɔ [glàp bâan] ləəi", "พอเลิกงาน เขาก็กลับบ้านเลย", "As soon as he finishes work, he goes straight home."],
+    ["tâa dʉ̀ʉm gaafɛɛ 3 [gɛ̂ɛo], chán gɔ̂ɔ jà nɔɔn mâi làp", "ถ้าดื่มกาแฟ 3 แก้ว ฉันก็จะนอนไม่หลับ", "If I drink 3 cups of coffee, I won't be able to sleep."]
+  ],
+  "qa": [
+    {"ctx": "☔ If it rains tomorrow, you'll stay home.", "q": "tâa prûngníi fǒn dtòk, kun jà tam arai?", "a": "tâa fǒn dtòk, chán gɔ̂ɔ jà yùu bâan"},
+    {"ctx": "🏠 Every day, as soon as you get home, you shower.", "q": "pɔɔ tʉ̌ng bâan, kun tam arai?", "a": "pɔɔ tʉ̌ng bâan, chán gɔ̂ɔ àap náam"},
+    {"ctx": "💰 If you had lots of money, you'd travel to Japan.", "q": "tâa mii ngən yə́, kun jà tam arai?", "a": "chán gɔ̂ɔ jà bpai tîao yîibpùn"},
+    {"ctx": "😢 When you're sad, you listen to music.", "q": "pɔɔ sǐajai, kun tam arai?", "a": "pɔɔ sǐajai, chán gɔ̂ɔ fang pleeng"}
+  ]
+}

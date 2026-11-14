@@ -1,0 +1,62 @@
+{
+  "id": "can-dai-bpen-wai",
+  "title": "Can: dâai, bpen or wǎi?",
+  "source": "Journey 3 · Chapter 43 homework",
+  "notes": [
+    "verb + bpen = know how (a skill you learned): wâaináam bpen, tam aahǎan tai bpen.",
+    "verb + wǎi = have the strength, can handle it: yók mâi wǎi (too heavy), gin pèt mâi wǎi, rian dtɔ̀ɔ mâi wǎi (too tired).",
+    "verb + dâai = can / possible because of the situation: bpai mâi dâai, sài mâi dâai (too small), tam ngaan mâi dâai (computer broken).",
+    "Negative: verb + mâi + dâai / bpen / wǎi. Question: … dâai mái? / … bpen mái? / … wǎi mái?"
+  ],
+  "generators": [],
+  "vocab": [
+    ["verb + dâai", "…ได้", "can (possible, allowed)"],
+    ["verb + bpen", "…เป็น", "know how to (learned skill)"],
+    ["verb + wǎi", "…ไหว", "can manage, have the strength to"],
+    ["grabpǎo", "กระเป๋า", "bag"],
+    ["nàk", "หนัก", "heavy"],
+    ["kɔmpíudtə̂ə", "คอมพิวเตอร์", "computer"],
+    ["bpanhǎa", "ปัญหา", "problem"],
+    ["méet", "เมตร", "metre"],
+    ["bpiin kǎo", "ปีนเขา", "to climb a mountain"],
+    ["jɛ̀msǎi", "แจ่มใส", "clear, bright (weather)"],
+    ["chút", "ชุด", "outfit, set"],
+    ["lék", "เล็ก", "small"],
+    ["bɛ̀t mòt", "แบตหมด", "battery is dead"],
+    ["lên geem", "เล่นเกม", "to play games"],
+    ["nʉ̀ai", "เหนื่อย", "tired"],
+    ["dtɔ̀ɔ", "ต่อ", "to continue"],
+    ["sɔ̂ɔm", "ซ่อม", "to repair"],
+    ["nák-dondtrii", "นักดนตรี", "musician"],
+    ["lên dondtrii", "เล่นดนตรี", "to play music"],
+    ["nát", "นัด", "appointment"]
+  ],
+  "sentences": [
+    ["chán tam aahǎan tai [bpen] prɔ́wâa kəəi rian", "ฉันทำอาหารไทยเป็นเพราะเคยเรียน", "I can cook Thai food because I took lessons."],
+    ["grabpǎo nàk gəənbpai, chán gɔ̂ɔləəi yók mâi [wǎi]", "กระเป๋าหนักเกินไป ฉันก็เลยยกไม่ไหว", "The bag is too heavy, so I can't lift it."],
+    ["kɔmpíudtə̂ə mii bpanhǎa, gɔ̂ɔləəi tam ngaan mâi [dâai]", "คอมพิวเตอร์มีปัญหา ก็เลยทำงานไม่ได้", "The computer has a problem, so I can't work."],
+    ["mʉ̂agɔ̀ɔn mii covid-19 yə́ mâak, túkkon gɔ̂ɔləəi bpai tîao mâi [dâai]", "เมื่อก่อนมีโควิด-19 เยอะมาก ทุกคนก็เลยไปเที่ยวไม่ได้", "Before, there was a lot of covid-19, so nobody could travel."],
+    ["káo fʉ̀k wâaináam dtalɔ̀ɔt, gɔ̂ɔləəi wâaináam 1,500 méet [wǎi]", "เขาฝึกว่ายน้ำตลอด ก็เลยว่ายน้ำ 1,500 เมตรไหว", "He trains all the time, so he can manage to swim 1,500 metres."],
+    ["pûut paasǎa tai [bpen] prɔ́wâa rian maa naan 3 dʉan lɛ́ɛo", "พูดภาษาไทยเป็นเพราะเรียนมานาน 3 เดือนแล้ว", "I can speak Thai because I've studied for 3 months."],
+    ["ngûang mâak! kàp rót mâi [wǎi]", "ง่วงมาก ขับรถไม่ไหว", "So sleepy! I can't keep driving."],
+    ["mǎa kɔ̌ɔng pǒm sawàtdii [bpen], prɔ́ pǒm fʉ̀k man túkwan", "หมาของผมสวัสดีเป็น เพราะผมฝึกมันทุกวัน", "My dog knows how to wai because I train it every day."],
+    ["chán chɔ̂ɔp gin aahǎan gaolǐi dtɛ̀ɛ tam mâi [bpen]", "ฉันชอบกินอาหารเกาหลีแต่ทำไม่เป็น", "I like eating Korean food but I don't know how to make it."],
+    ["wanníi aagàat jɛ̀msǎi, bpai bpiin kǎo [dâai]", "วันนี้อากาศแจ่มใส ไปปีนเขาได้", "The weather is clear today; we can go climbing."],
+    ["chút níi lék gəənbpai, chán sài mâi [dâai]", "ชุดนี้เล็กเกินไป ฉันใส่ไม่ได้", "This outfit is too small; I can't wear it."],
+    ["mʉʉtʉ̌ʉ bɛ̀t mòt, pǒm gɔ̂ɔləəi lên geem mâi [dâai]", "มือถือแบตหมด ผมก็เลยเล่นเกมไม่ได้", "My phone battery is dead, so I can't play games."],
+    ["dtɔɔnníi chán nʉ̀ai mâak! rian dtɔ̀ɔ mâi [wǎi]", "ตอนนี้ฉันเหนื่อยมาก เรียนต่อไม่ไหว", "I'm so tired now! I can't keep studying."],
+    ["pɔ̂ɔ sɔ̂ɔm rót [bpen], gèng mâak ləəi", "พ่อซ่อมรถเป็น เก่งมากเลย", "Dad knows how to fix cars; he's really good."],
+    ["káo bpen nák-dondtrii, káo gɔ̂ɔləəi lên dondtrii [bpen] lǎai yàang", "เขาเป็นนักดนตรี เขาก็เลยเล่นดนตรีเป็นหลายอย่าง", "He's a musician, so he can play many instruments."],
+    ["aahǎan pèt gəənbpai, chán gin mâi [wǎi]", "อาหารเผ็ดเกินไป ฉันกินไม่ไหว", "The food is too spicy; I can't handle it."],
+    ["chán wâaináam mâi [bpen], mâi kəəi rian", "ฉันว่ายน้ำไม่เป็น ไม่เคยเรียน", "I can't swim; I never learned."],
+    ["prûngníi chán bpai rian mâi [dâai], prɔ́ mii nát", "พรุ่งนี้ฉันไปเรียนไม่ได้ เพราะมีนัด", "Tomorrow I can't go to class because I have an appointment."],
+    ["kun kàp rót [bpen] mái?", "คุณขับรถเป็นไหม", "Do you know how to drive?"]
+  ],
+  "qa": [
+    {"ctx": "🏊 You never learned to swim.", "q": "kun wâaináam bpen mái?", "a": "wâaináam mâi bpen"},
+    {"ctx": "🌶️ The som tam is far too spicy for you.", "q": "gin wǎi mái?", "a": "gin mâi wǎi"},
+    {"ctx": "📅 You have an appointment tomorrow, so you can't come to class.", "q": "prûngníi maa rian dâai mái?", "a": "maa mâi dâai, prɔ́ mii nát"},
+    {"ctx": "🍳 You took a Thai cooking course.", "q": "kun tam aahǎan tai bpen mái?", "a": "bpen, prɔ́wâa kəəi rian"},
+    {"ctx": "😴 You've studied for 6 hours and you're exhausted.", "q": "rian dtɔ̀ɔ wǎi mái?", "a": "mâi wǎi, nʉ̀ai mâak"}
+  ]
+}

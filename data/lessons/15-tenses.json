@@ -1,0 +1,59 @@
+{
+  "id": "tenses",
+  "title": "Tense words: jà, gamlang, yang … yùu, lɛ́ɛo, dâai",
+  "source": "Journey 2 · Chapter 38 + related homework",
+  "notes": [
+    "Thai verbs never change. Small words show the time:",
+    "jà + verb = will (plan) · gamlang jà + verb = about to (getting ready) · jà + verb + lɛ́ɛo = any second now.",
+    "gamlang + verb + yùu = doing it right now · yang + verb + yùu = still doing it · verb + lɛ́ɛo = already done.",
+    "yang mâi + verb = not yet / still not. Question: … rʉ̌ʉ yang? (… yet?) Answer: … lɛ́ɛo / yang.",
+    "Past events in a story: dâai + verb (káo dâai jəə …) · mâi dâai + verb = didn't · jà mâi + verb = won't."
+  ],
+  "generators": [],
+  "vocab": [
+    ["jà", "จะ", "will (future)"],
+    ["gamlang", "กำลัง", "in the middle of (…-ing)"],
+    ["gamlang jà", "กำลังจะ", "about to"],
+    ["yang … yùu", "ยัง…อยู่", "still …-ing"],
+    ["rʉ̌ʉ yang", "หรือยัง", "… yet? (question)"],
+    ["dâai + verb", "ได้ + verb", "did, got to (past)"],
+    ["mâi dâai + verb", "ไม่ได้ + verb", "didn't"],
+    ["jà mâi", "จะไม่", "won't"],
+    ["gúaidtǐao", "ก๋วยเตี๋ยว", "noodle soup"],
+    ["jəə", "เจอ", "to meet, run into"],
+    ["taló gan", "ทะเลาะกัน", "to argue, fight"],
+    ["gʉ̀ap", "เกือบ", "almost"],
+    ["sùttáai", "สุดท้าย", "in the end"],
+    ["sǎamii", "สามี", "husband"],
+    ["kɔ́ɔt", "คอร์ส", "course"]
+  ],
+  "sentences": [
+    ["káo [jà] fang pleeng", "เขาจะฟังเพลง", "She will listen to music."],
+    ["káo [gamlang jà] fang pleeng", "เขากำลังจะฟังเพลง", "She's about to listen to music."],
+    ["káo gamlang fang pleeng [yùu]", "เขากำลังฟังเพลงอยู่", "She's listening to music right now."],
+    ["káo [yang] fang pleeng yùu", "เขายังฟังเพลงอยู่", "She's still listening to music."],
+    ["káo fang pleeng [lɛ́ɛo]", "เขาฟังเพลงแล้ว", "She has already listened to music."],
+    ["chán jà gin gúaidtǐao [lɛ́ɛo]", "ฉันจะกินก๋วยเตี๋ยวแล้ว", "I'm just about to eat my noodles."],
+    ["dtɔɔnníi nákrian [gamlang] tam arai yùu?", "ตอนนี้นักเรียนกำลังทำอะไรอยู่", "What are the students doing right now?"],
+    ["sǎam tûm lɛ́ɛo, dtɛ̀ɛ sǎamii [yang] tam ngaan yùu", "สามทุ่มแล้ว แต่สามียังทำงานอยู่", "It's already 9 p.m., but my husband is still working."],
+    ["káo rian kàp rót maa naan 2 bpii lɛ́ɛo, dtɛ̀ɛ káo [yang] kàp rót mâi dâai", "เขาเรียนขับรถมานาน 2 ปีแล้ว แต่เขายังขับรถไม่ได้", "He's been learning to drive for 2 years, but he still can't drive."],
+    ["mɛɛo [yang] mâi dtʉ̀ʉn, man nɔɔn dtângdtɛ̀ɛ 6 moong yen", "แมวยังไม่ตื่น มันนอนตั้งแต่ 6 โมงเย็น", "The cat still hasn't woken up; it's been asleep since 6 p.m."],
+    ["mʉ̂a sǎam dʉan tîilɛ́ɛo kun Mike [dâai] jəə pûuyǐng tai kon nʉ̀ng", "เมื่อสามเดือนที่แล้วคุณไมค์ได้เจอผู้หญิงไทยคนหนึ่ง", "Three months ago Mike met a Thai woman."],
+    ["sɔ̌ɔng dʉan nâa táng 2 kon [jà] bpai talee dûaigan", "สองเดือนหน้าทั้ง 2 คนจะไปทะเลด้วยกัน", "In two months, the two of them will go to the beach together."],
+    ["kun Mike [jà mâi] bpai roongrian 5 wan", "คุณไมค์จะไม่ไปโรงเรียน 5 วัน", "Mike won't go to school for 5 days."],
+    ["sùttáai káo 2 kon gɔ̂ɔ [mâi dâai] jəə gan ìik", "สุดท้ายเขา 2 คนก็ไม่ได้เจอกันอีก", "In the end, the two of them didn't see each other again."],
+    ["mʉ̂awaan chán [mâi dâai] bpai rian, prɔ́ bpùat hǔa", "เมื่อวานฉันไม่ได้ไปเรียน เพราะปวดหัว", "Yesterday I didn't go to class because I had a headache."],
+    ["chán [gamlang jà] ɔ̀ɔk jàak bâan, rɔɔ dǐao ná", "ฉันกำลังจะออกจากบ้าน รอเดี๋ยวนะ", "I'm about to leave the house; wait a moment."],
+    ["kun gin kâao [rʉ̌ʉ yang]?", "คุณกินข้าวหรือยัง", "Have you eaten yet?"],
+    ["fǒn [yang] dtòk yùu, rao rɔɔ gɔ̀ɔn", "ฝนยังตกอยู่ เรารอก่อน", "It's still raining; let's wait first."],
+    ["pɔ̂ɔ [gamlang] kàp rót yùu", "พ่อกำลังขับรถอยู่", "Dad is driving right now."],
+    ["kruu hěn nákrian gamlang kui gan [yùu]", "ครูเห็นนักเรียนกำลังคุยกันอยู่", "The teacher sees the students chatting."]
+  ],
+  "qa": [
+    {"ctx": "🍜 A friend calls while you're eating.", "q": "kun gamlang tam arai yùu?", "a": "chán gamlang gin kâao yùu"},
+    {"ctx": "🍚 You already ate.", "q": "kun gin kâao rʉ̌ʉ yang?", "a": "gin lɛ́ɛo"},
+    {"ctx": "📚 You haven't done your homework yet.", "q": "kun tam gaanbâan rʉ̌ʉ yang?", "a": "yang mâi dâai tam"},
+    {"ctx": "🏖️ Next month you'll go to the beach.", "q": "dʉan nâa kun jà tam arai?", "a": "dʉan nâa chán jà bpai talee"},
+    {"ctx": "🚗 Your brother has been learning to drive for a year and still can't.", "q": "pîichaai kun kàp rót dâai rʉ̌ʉ yang?", "a": "yang kàp rót mâi dâai"}
+  ]
+}
