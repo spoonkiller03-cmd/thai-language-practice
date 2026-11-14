@@ -6,9 +6,11 @@ A static PWA (no build step) hosted on GitHub Pages from `main`. The owner sends
 - `data/index.json`: ordered list of lesson files. Add new files here.
 - `data/lessons/NN-slug.json`: one lesson each: `id`, `title`, `source`, `notes[]`, `generators[]`, `vocab[[rom, thai, english]]`, `sentences[[rom, thai, english]]`, `qa[{ctx, q, a}]`.
   - In `sentences`, wrap the drilled word in `[brackets]`. That makes a fill-the-gap card. Every sentence with Thai script also becomes a listening card.
+  - Optional 4th item in a sentence = an emoji. That adds a "which picture matches?" recall card (like the book's milestone pages). Keep emojis unique within a lesson.
+  - Optional `nouns[[rom, thai, english-singular, emoji, classifier, classifierThai]]` feeds the endless `classifier` generator (Classifiers tile). Add new nouns there as classifiers come up.
   - `qa` = a real situation (emoji + English context) + an optional Thai question + a model answer. These are self-graded.
   - Card ids are derived from the romanization text, so editing a sentence's text resets its progress. Fix typos when needed, but don't churn.
-- `app.js`: the app. `GENERATORS` makes random, endless items (time, duration, day, date, year, ordinal, meaning). A lesson turns a generator on by listing it in `generators`.
+- `app.js`: the app. `GENERATORS` makes random, endless items (time, duration, day, date, month, year, ordinal, meaning, classifier). A lesson turns a generator on by listing it in `generators`.
 - `sw.js`: network-first cache. Bump `CACHE` only if the cached shell needs a hard reset.
 
 ## Romanization (match the class exactly: Duke Language School, Journey 2)
@@ -17,7 +19,8 @@ A static PWA (no build step) hosted on GitHub Pages from `main`. The owner sends
 - Tones: mid unmarked, low à, falling â, high á, rising ǎ (on the first vowel letter).
 - Numbers are written as digits (8 moong 25 naatii).
 - Follow the printed worksheets over handwriting. Hyphens and spaces are ignored by the answer checker.
-- Spellings are checked against the book glossary (Journey 1–3 vocab pages, pp. 158–174). The glossary wins over Claude's guesses. Where the homework print differs (e.g. fítnèet vs glossary fítnèt), keep the homework form. Still unconfirmed: cháa-cháa, níu, too (โทร), jai-diao, kɔ́ɔt, rôm, tan, bao-wǎan, rót dtìt.
+- Spellings are checked against the book glossary (Journey 1–3 vocab pages, pp. 158–174). The glossary wins over Claude's guesses. Where the homework print differs (e.g. fítnèet vs glossary fítnèt), keep the homework form. Still unconfirmed: cháa-cháa, níu, too (โทร), jai-diao, kɔ́ɔt, rôm, tan, bao-wǎan, rót dtìt, and Claude-written noun spellings in 21-classifiers (gâo-îi, kúkgîi, jàkgrayaan, naalíkaa, gunjɛɛ, grà-dàat, nékktai, sɔ̂i kɔɔ, kěmkàt, tiiwii, rɔɔngtáao, dtàkiap). The owner said to leave unconfirmed words as they are unless a printed source shows otherwise.
+- Book texts (interviews, milestone sentences) are copyrighted: write new sentences from their vocabulary instead of copying them.
 
 ## Rules for new content
 - Use the homework sentences, and also write NEW varied sentences that recombine the vocabulary across lessons. The owner memorises worksheet answers, so the variety is the point.

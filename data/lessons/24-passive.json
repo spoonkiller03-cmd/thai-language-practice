@@ -1,0 +1,41 @@
+{
+  "id": "passive",
+  "title": "Passive: tùuk (got bitten, got stolen …)",
+  "source": "Journey 3 · homework",
+  "notes": [
+    "subject + tùuk + (doer) + verb = something happens TO the subject, usually something bad: dèk pûuchaai tùuk mǎa gàt.",
+    "Active → passive: mǎa gàt dèk pûuchaai → dèk pûuchaai tùuk mǎa gàt.",
+    "The doer can be dropped: mʉʉtʉ̌ʉ kɔ̌ɔng chán tùuk kamooy (my phone got stolen).",
+    "wâa can also mean to scold: tùuk kruu wâa = got told off by the teacher."
+  ],
+  "generators": [],
+  "vocab": [
+    ["tùuk + verb", "ถูก + verb", "passive: get …-ed (usually bad)"],
+    ["gàt", "กัด", "to bite"],
+    ["tíng", "ทิ้ง", "to throw away, abandon"],
+    ["chon", "ชน", "to crash into, hit"],
+    ["kamooy", "ขโมย", "to steal; thief"],
+    ["dtamrùat", "ตำรวจ", "police"],
+    ["jàp", "จับ", "to catch, arrest"],
+    ["yung", "ยุง", "mosquito"],
+    ["kayà", "ขยะ", "rubbish"]
+  ],
+  "sentences": [
+    ["dèk pûuchaai [tùuk] mǎa gàt", "เด็กผู้ชายถูกหมากัด", "The boy was bitten by a dog."],
+    ["mɛɛo tùuk káo [tíng] tîi tanǒn", "แมวถูกเขาทิ้งที่ถนน", "The cat was abandoned on the street."],
+    ["chán [tùuk] pʉ̂an glìat prɔ́wâa chán sǔai", "ฉันถูกเพื่อนเกลียดเพราะว่าฉันสวย", "My friends hate me because I'm pretty."],
+    ["nákrian tùuk kruu [wâa] prɔ́wâa mâi tam gaanbâan", "นักเรียนถูกครูว่าเพราะว่าไม่ทำการบ้าน", "The student got told off by the teacher for not doing homework."],
+    ["kun David [tùuk] rót mɔɔdtəəsai sǐi dam chon mʉ̂a aatít tîilɛ́ɛo", "คุณเดวิดถูกรถมอเตอร์ไซค์สีดำชนเมื่ออาทิตย์ที่แล้ว", "David was hit by a black motorbike last week."],
+    ["kamooy [tùuk] dtamrùat jàp", "ขโมยถูกตำรวจจับ", "The thief was caught by the police."],
+    ["mʉʉtʉ̌ʉ kɔ̌ɔng chán tùuk [kamooy]", "มือถือของฉันถูกขโมย", "My phone was stolen."],
+    ["chán tùuk yung [gàt] táng kʉʉn", "ฉันถูกยุงกัดทั้งคืน", "I got bitten by mosquitoes all night."],
+    ["kun Tim tùuk [mɛ̂ɛ] wâa prɔ́ glàp bâan dʉ̀k", "คุณทิมถูกแม่ว่าเพราะกลับบ้านดึก", "Tim got told off by his mum for coming home late."],
+    ["rót kɔ̌ɔng pɔ̂ɔ [tùuk] chon", "รถของพ่อถูกชน", "Dad's car got hit."],
+    ["tâa tíng kayà bon tanǒn, kun jà tùuk dtamrùat [jàp]", "ถ้าทิ้งขยะบนถนน คุณจะถูกตำรวจจับ", "If you throw rubbish on the street, the police will catch you."]
+  ],
+  "qa": [
+    {"ctx": "🐕 Turn it around with tùuk: mǎa gàt dèk pûuchaai.", "q": "", "a": "dèk pûuchaai tùuk mǎa gàt"},
+    {"ctx": "📱 Your phone got stolen.", "q": "bpen arai?", "a": "mʉʉtʉ̌ʉ kɔ̌ɔng chán tùuk kamooy"},
+    {"ctx": "🦟 You got bitten by mosquitoes all night.", "q": "bpen arai?", "a": "chán tùuk yung gàt táng kʉʉn"}
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "favours-rules",
+  "title": "Asking favours & rules (kɔ̌ɔ, chûai, fàak, rɔ́pguan, yàa, hâam, hâi)",
+  "source": "Journey 3 · homework",
+  "notes": [
+    "kɔ̌ɔ + thing / verb = may I (have): kɔ̌ɔ tàai rûup nɔ̀i kâ · kɔ̌ɔ gaafɛɛ yen 1 gɛ̂ɛo.",
+    "chûai + verb (+ hâi) + nɔ̀i = please (help me): chûai pûut ìik tii nɔ̀i.",
+    "fàak + verb = ask someone to do it on your behalf: fàak bɔ̀ɔk kruu wâa … · fàak sʉ́ʉ náam nɔ̀i.",
+    "rɔ́pguan = sorry to bother you (polite opener): rɔ́pguan chûai rîak tɛ́ksîi hâi nɔ̀i kâ.",
+    "yàa + verb = don't · hâam + verb = it's not allowed · mâi dtɔ̂ng + verb = no need to.",
+    "hâi + person + verb = make them do it (order) OR let them do it (permit): kruu hâi nákrian maa roongrian túkwan · mɛ̂ɛ hâi lûuk gin kanǒm."
+  ],
+  "generators": [],
+  "vocab": [
+    ["kɔ̌ɔ", "ขอ", "may I (have); to ask for"],
+    ["chûai", "ช่วย", "to help; please (do)"],
+    ["fàak", "ฝาก", "to ask someone to do it for you"],
+    ["rɔ́pguan", "รบกวน", "sorry to bother you"],
+    ["rîak", "เรียก", "to call (a taxi, someone)"],
+    ["tɛ́ksîi", "แท็กซี่", "taxi"],
+    ["nɔ̀i", "หน่อย", "a little (softens a request)"],
+    ["ìik tii", "อีกที", "once more"],
+    ["yàa", "อย่า", "don't"],
+    ["hâam", "ห้าม", "forbidden, not allowed"],
+    ["mâi dtɔ̂ng", "ไม่ต้อง", "no need to"],
+    ["tàai rûup", "ถ่ายรูป", "to take a photo"],
+    ["mǔu", "หมู", "pig; pork"],
+    ["dǐao níi", "เดี๋ยวนี้", "right now"]
+  ],
+  "sentences": [
+    ["rɔ́pguan chûai [rîak] tɛ́ksîi hâi rao nɔ̀i kâ", "รบกวนช่วยเรียกแท็กซี่ให้เราหน่อยค่ะ", "Sorry to bother you, could you call us a taxi, please?"],
+    ["[fàak] bɔ̀ɔk kruu wâa chán mâi sabaai, bpai rian mâi dâai nɔ̀i kâ", "ฝากบอกครูว่าฉันไม่สบาย ไปเรียนไม่ได้หน่อยค่ะ", "Please tell the teacher for me that I'm sick and can't come to class."],
+    ["mǔu kun nâarák mâak, [kɔ̌ɔ] tàai rûup nɔ̀i kâ", "หมูคุณน่ารักมาก ขอถ่ายรูปหน่อยค่ะ", "Your pig is so cute, may I take a photo?"],
+    ["fang mâi tan ləəi kâ, [chûai] pûut ìik tii nɔ̀i", "ฟังไม่ทันเลยค่ะ ช่วยพูดอีกทีหน่อย", "I couldn't catch that; could you say it again, please?"],
+    ["fàak sʉ́ʉ náam gàp bəəgə̂ə [nɔ̀i] kâ", "ฝากซื้อน้ำกับเบอร์เกอร์หน่อยค่ะ", "Could you buy me water and a burger, please?"],
+    ["[mâi dtɔ̂ng] sài tǔng", "ไม่ต้องใส่ถุง", "No bag needed."],
+    ["[yàa] pûut paasǎa anggrìt nai hɔ̂ng rian", "อย่าพูดภาษาอังกฤษในห้องเรียน", "Don't speak English in the classroom."],
+    ["[hâam] pûut kam mâi sùpâap nai hɔ̂ng rian", "ห้ามพูดคำไม่สุภาพในห้องเรียน", "Rude words are not allowed in class."],
+    ["[hâam] sùup burìi tîinîi", "ห้ามสูบบุหรี่ที่นี่", "No smoking here."],
+    ["mâi dtɔ̂ng [rîip], rao mii weelaa", "ไม่ต้องรีบ เรามีเวลา", "No need to hurry, we have time."],
+    ["[kɔ̌ɔ] gaafɛɛ yen 1 gɛ̂ɛo kâ", "ขอกาแฟเย็น 1 แก้วค่ะ", "An iced coffee, please."],
+    ["chûai pûut [cháa-cháa] nɔ̀i kâ", "ช่วยพูดช้าๆหน่อยค่ะ", "Please speak slowly."],
+    ["yàa [lʉʉm] bpìt fai ná", "อย่าลืมปิดไฟนะ", "Don't forget to turn off the light."],
+    ["kruu [hâi] nákrian maa roongrian túkwan", "ครูให้นักเรียนมาโรงเรียนทุกวัน", "The teacher makes the students come to school every day."],
+    ["chán hâi fɛɛn [tam aahǎan]", "ฉันให้แฟนทำอาหาร", "I have my partner cook."],
+    ["mɛ̂ɛ hâi lûuk tam gaanbâan [dǐao níi]", "แม่ให้ลูกทำการบ้านเดี๋ยวนี้", "Mum tells her child to do homework right now."],
+    ["mɛ̂ɛ hâi lûuk gin [kanǒm]", "แม่ให้ลูกกินขนม", "Mum lets her child eat snacks."],
+    ["mɛ̂ɛ hâi lûuk glàp bâan [dtɔɔn dʉ̀k]", "แม่ให้ลูกกลับบ้านตอนดึก", "Mum lets her child come home late."]
+  ],
+  "qa": [
+    {"ctx": "🚕 At hotel reception: politely ask them to call a taxi for you.", "q": "", "a": "rɔ́pguan chûai rîak tɛ́ksîi hâi nɔ̀i kâ"},
+    {"ctx": "🤒 Ask a classmate to tell the teacher you're sick.", "q": "", "a": "fàak bɔ̀ɔk kruu wâa chán mâi sabaai nɔ̀i kâ"},
+    {"ctx": "🛍️ At 7-Eleven you don't need a bag.", "q": "ao tǔng mái kâ?", "a": "mâi dtɔ̂ng sài tǔng kâ"},
+    {"ctx": "👂 You didn't catch what someone said.", "q": "", "a": "chûai pûut ìik tii nɔ̀i kâ"},
+    {"ctx": "📸 Ask if you can take a photo.", "q": "", "a": "kɔ̌ɔ tàai rûup nɔ̀i kâ"}
+  ]
+}

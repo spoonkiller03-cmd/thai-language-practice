@@ -116,6 +116,8 @@ input.answer:focus, textarea.answer:focus { outline: 2px solid var(--accent); ou
 
 .choices { display: grid; gap: 8px; }
 .choices button { text-align: left; }
+.choices.emoji { grid-template-columns: 1fr 1fr; }
+.choices.emoji button { font-size: 2rem; text-align: center; padding: 14px 8px; }
 .choices button.correct { background: var(--good-soft); border-color: var(--good); }
 .choices button.wrong { background: var(--bad-soft); border-color: var(--bad); }
 

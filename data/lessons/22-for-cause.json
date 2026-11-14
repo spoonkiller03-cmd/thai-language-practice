@@ -1,0 +1,48 @@
+{
+  "id": "for-cause",
+  "title": "For & because of it (sǎmràp, pʉ̂a, tamhâi)",
+  "source": "Journey 3 · homework",
+  "notes": [
+    "A sǎmràp B = A is (made) for B: chút wâaináam sǎmràp wâaináam · kɔ́ɔt níi sǎmràp chaao dtàangchâat.",
+    "action + pʉ̂a + person = do it for someone: tam gaafɛɛ pʉ̂a nɔ́ɔng sǎao.",
+    "action + pʉ̂a + purpose = in order to: rian paasǎa tai pʉ̂a duu sii-rîi tai.",
+    "cause + tamhâi + result = makes / causes: dʉ̀ʉm lâo tamhâi mao · fǒn dtòk tamhâi rót dtìt."
+  ],
+  "generators": [],
+  "vocab": [
+    ["sǎmràp", "สำหรับ", "for (a use / a person)"],
+    ["pʉ̂a", "เพื่อ", "for (someone); in order to"],
+    ["tamhâi", "ทำให้", "to make, cause"],
+    ["chút wâaináam", "ชุดว่ายน้ำ", "swimsuit"],
+    ["bprayàt ngən", "ประหยัดเงิน", "to save money"],
+    ["sii-rîi", "ซีรีส์", "TV series"],
+    ["chaao dtàangchâat", "ชาวต่างชาติ", "foreigners"],
+    ["diijai", "ดีใจ", "glad, happy"]
+  ],
+  "sentences": [
+    ["chút wâaináam [sǎmràp] wâaináam", "ชุดว่ายน้ำสำหรับว่ายน้ำ", "A swimsuit is for swimming."],
+    ["nángsʉ̌ʉ sǎmràp [rian]", "หนังสือสำหรับเรียน", "Books are for studying."],
+    ["gɛ̂ɛo [sǎmràp] dʉ̀ʉm lâo", "แก้วสำหรับดื่มเหล้า", "A glass for drinking alcohol."],
+    ["kɔmpíudtə̂ə sǎmràp [lên geem]", "คอมพิวเตอร์สำหรับเล่นเกม", "A computer for playing games."],
+    ["kɔ́ɔt níi sǎmràp [chaao dtàangchâat]", "คอร์สนี้สำหรับชาวต่างชาติ", "This course is for foreigners."],
+    ["aahǎan níi sǎmràp [dèk]", "อาหารนี้สำหรับเด็ก", "This food is for kids."],
+    ["ráan níi mii aahǎan sǎmràp [mǎa]", "ร้านนี้มีอาหารสำหรับหมา", "This shop has food for dogs."],
+    ["dʉ̀ʉm lâo [tamhâi] mao", "ดื่มเหล้าทำให้เมา", "Drinking alcohol makes you drunk."],
+    ["gin gaafɛɛ mâak gəənbpai tamhâi [nɔɔn mâi làp]", "กินกาแฟมากเกินไปทำให้นอนไม่หลับ", "Too much coffee keeps you awake."],
+    ["sʉ́ʉ kɔ̌ɔng bɔ̀i-bɔ̀i tamhâi [bprayàt] ngən mâi dâai", "ซื้อของบ่อยๆทำให้ประหยัดเงินไม่ได้", "Shopping often makes it impossible to save money."],
+    ["fǒn dtòk [tamhâi] rót dtìt", "ฝนตกทำให้รถติด", "Rain causes traffic jams."],
+    ["pleeng níi tamhâi chán [diijai]", "เพลงนี้ทำให้ฉันดีใจ", "This song makes me happy."],
+    ["rót dtìt tamhâi chán [sǎai]", "รถติดทำให้ฉันสาย", "The traffic made me late."],
+    ["tam gaafɛɛ túkwan [pʉ̂a] nɔ́ɔng sǎao", "ทำกาแฟทุกวันเพื่อน้องสาว", "I make coffee every day for my sister."],
+    ["sʉ́ʉ aahǎan pɛɛng pʉ̂a [mɛɛo]", "ซื้ออาหารแพงเพื่อแมว", "I buy expensive food for the cat."],
+    ["rian paasǎa tai [pʉ̂a] duu sii-rîi tai", "เรียนภาษาไทยเพื่อดูซีรีส์ไทย", "I study Thai so I can watch Thai series."],
+    ["bprayàt ngən pʉ̂a [bpai tîao] bɔ̀i-bɔ̀i", "ประหยัดเงินเพื่อไปเที่ยวบ่อยๆ", "I save money so I can travel often."],
+    ["chán ɔ̀ɔk gamlang gaai [pʉ̂a] sùkkapâap", "ฉันออกกำลังกายเพื่อสุขภาพ", "I exercise for my health."]
+  ],
+  "qa": [
+    {"ctx": "🩱 What's a swimsuit for?", "q": "chút wâaináam sǎmràp arai?", "a": "chút wâaináam sǎmràp wâaináam"},
+    {"ctx": "📺 You're learning Thai to watch Thai series.", "q": "kun rian paasǎa tai pʉ̂a arai?", "a": "chán rian paasǎa tai pʉ̂a duu sii-rîi tai"},
+    {"ctx": "☕ Coffee in the evening keeps you awake.", "q": "gin gaafɛɛ dtɔɔn yen tamhâi bpen yangngai?", "a": "tamhâi nɔɔn mâi làp"},
+    {"ctx": "💰 You're saving money to travel.", "q": "tammai kun bprayàt ngən?", "a": "bprayàt ngən pʉ̂a bpai tîao"}
+  ]
+}

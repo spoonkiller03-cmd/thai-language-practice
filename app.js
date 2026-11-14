@@ -3,7 +3,7 @@
    Content lives in data/lessons/*.json (listed in data/index.json).
    Progress is stored on this device only (localStorage) and can be exported. */
 
-const APP_VERSION = '1.1.0';
+const APP_VERSION = '1.2.0';
 const STORE_KEY = 'thai-practice.v1';
 const DAY = 86400000;
 const INTERVALS = [0, 1, 3, 7, 14, 30, 60]; // days, by box
@@ -116,8 +116,9 @@ function buildCards() {
       CARDS.push({ id: 'vr:' + r, kind: 'vocabRec', lesson: L.id, r, th, en });
       CARDS.push({ id: 'vp:' + r, kind: 'vocabProd', lesson: L.id, r, th, en });
     }
-    for (const [r, th, en] of L.sentences || []) {
+    for (const [r, th, en, emo] of L.sentences || []) {
       const p = plain(r);
+      if (emo) CARDS.push({ id: 'e:' + p, kind: 'recall', lesson: L.id, r: p, th, en, emo });
       const m = r.match(/\[([^\]]+)\]/);
       if (m) CARDS.push({ id: 'c:' + p, kind: 'cloze', lesson: L.id, r, th, en, target: m[1] });
       if (th) CARDS.push({ id: 'l:' + p, kind: 'listen', lesson: L.id, r: p, th, en });
@@ -268,6 +269,26 @@ const GENERATORS = {
     const ans = [cl + ' tîi ' + k, 'tîi ' + k];
     return { kind: 'typed', label: 'Ordinals', ctx: 'Count from the left. Which one is ' + row[k - 1] + '?', big: row.join(' '), q: (people ? 'kon' : 'dtua') + ' nǎi?', answers: ans, show: ans[0] };
   },
+  classifier() {
+    const nouns = LESSONS.filter((L) => lessonOn(L.id)).flatMap((L) => L.nouns || []);
+    if (!nouns.length) return GENERATORS.time();
+    const [r, th, en, emo, cl, clTh] = pick(nouns);
+    const mode = rand(4);
+    if (mode === 3) {
+      const all = [...new Set(nouns.map((x) => x[4]))];
+      const opts = shuffle([cl, ...shuffle(all.filter((x) => x !== cl)).slice(0, 3)]);
+      return { kind: 'mc', label: 'Classifiers · which one?', q: emo + '  ' + r + ' 2 ___', th: th, options: opts, correct: cl };
+    }
+    if (mode === 2) {
+      const D = [['níi', 'นี้', 'this'], ['nán', 'นั้น', 'that'], ['nóon', 'โน้น', 'that one over there']];
+      const [d, dTh, dEn] = pick(D);
+      const ans = [r + ' ' + cl + ' ' + d, cl + ' ' + d];
+      return { kind: 'typed', label: 'Classifiers · this / that', ctx: '👉 Say "' + dEn + ' ' + en + '" in Thai.', big: emo, q: r + ' + ' + d, answers: ans, show: ans[0], th: th + clTh + dTh, en: dEn + ' ' + en, note: 'noun + classifier + níi / nán / nóon' };
+    }
+    const n = 2 + rand(5);
+    const ans = [r + ' ' + n + ' ' + cl, n + ' ' + cl, 'mii ' + r + ' ' + n + ' ' + cl];
+    return { kind: 'typed', label: 'Classifiers · count them', ctx: 'How many? Answer with noun + number + classifier.', big: emo.repeat(n), q: r + ' (' + en + ')', answers: ans, show: ans[0], th: th + ' ' + n + ' ' + clTh, en: n + ' × ' + en };
+  },
   meaning() {
     const pool = enabledCards().filter((c) => c.kind === 'vocabRec');
     const c = pick(pool);
@@ -341,7 +362,7 @@ function typedCard(item, done) {
     result = res;
     input.disabled = true;
     const alts = answers.length > 1 && item.gen ? h('div', { class: 'small muted' }, 'Also OK: ' + answers.slice(1, 4).join(' · ')) : null;
-    out.replaceChildren(...[feedback(res, shown, alts), item.gen ? null : reveal(item)].filter(Boolean));
+    out.replaceChildren(...[feedback(res, shown, alts), item.gen ? (item.th ? reveal({ th: item.th, en: item.en }) : null) : reveal(item)].filter(Boolean));
     actions.replaceChildren(...[
       res !== 'right' ? h('button', { onclick: () => next('right') }, 'I was right') : null,
       h('button', { class: 'primary', onclick: () => next(res === 'right' ? 'right' : res === 'wrong' ? 'wrong' : 'almost') }, 'Next')].filter(Boolean));
@@ -380,12 +401,19 @@ function mcCard(item, done) {
     options = shuffle([item.en, ...near.concat(far).map((c) => c.en)]); correct = item.en;
     prompt = canSpeak() ? [h('div', { class: 'prompt huge' }, '🎧'), audioRow(item.th)] : [h('div', { class: 'prompt' }, item.r), h('p', { class: 'hint' }, 'No speech on this device; reading instead.')];
     setTimeout(() => speak(item.th), 250);
+  } else if (item.kind === 'recall') {
+    kindLabel = 'Which picture matches?';
+    const pool = shuffle(CARDS.filter((c) => c.kind === 'recall' && c.emo !== item.emo));
+    const near = pool.filter((c) => c.lesson === item.lesson);
+    const others = [...new Set(near.concat(pool).map((c) => c.emo))].slice(0, 3);
+    options = shuffle([item.emo, ...others]); correct = item.emo;
+    prompt = [h('div', { class: 'prompt' }, item.r), audioRow(item.th)];
   } else { // generator mc
     kindLabel = item.label; options = item.options; correct = item.correct;
     prompt = [h('div', { class: 'prompt' }, item.q), audioRow(item.th)];
   }
   const out = h('div');
-  const box = h('div', { class: 'choices' });
+  const box = h('div', { class: 'choices' + (item.kind === 'recall' ? ' emoji' : '') });
   let answered = false;
   for (const o of options) {
     box.append(h('button', {
@@ -394,7 +422,7 @@ function mcCard(item, done) {
         const ok = o === correct;
         e.currentTarget.classList.add(ok ? 'correct' : 'wrong');
         [...box.children].forEach((b) => { if (b.textContent === correct) b.classList.add('correct'); });
-        out.replaceChildren(...[feedback(ok ? 'right' : 'wrong', correct), item.kind === 'listen' || item.kind === 'vocabRec' ? reveal(item) : null,
+        out.replaceChildren(...[feedback(ok ? 'right' : 'wrong', correct), item.kind === 'listen' || item.kind === 'vocabRec' || item.kind === 'recall' ? reveal(item) : null,
           h('div', { class: 'row', style: 'margin-top:12px' }, h('button', { class: 'primary', onclick: () => done(ok ? 'right' : 'wrong') }, 'Next'))].filter(Boolean));
       },
     }, o));
@@ -425,7 +453,7 @@ function qaCard(item, done) {
 
 function renderItem(item, done) {
   if (item.kind === 'qa') return qaCard(item, done);
-  if (item.kind === 'vocabRec' || item.kind === 'listen' || item.kind === 'mc') return mcCard(item, done);
+  if (item.kind === 'vocabRec' || item.kind === 'listen' || item.kind === 'recall' || item.kind === 'mc') return mcCard(item, done);
   return typedCard(item, done);
 }
 
@@ -482,6 +510,7 @@ function home() {
       tile('🎧', 'Listening', 'Hear a sentence, pick the meaning', listeningStart),
       tile('🕰️', 'Time & numbers', 'Endless random questions', numbersStart),
       tile('💬', 'Situations', 'What would you say?', situationsStart),
+      tile('🔢', 'Classifiers', 'Endless counting drill', classifiersStart),
       tile('⌨️', 'Typing in Thai', 'Unlocks in December', () => lockedScreen('Typing in Thai', 'This section opens when you start learning to write (December). Send your writing lessons as you go and they will be added level by level, using only letters you have learned.'), true),
       tile('🎵', 'Songs', 'Coming later', () => lockedScreen('Songs', 'Send song titles, artists and links when you are ready. Each song will get its link plus practice cards for its words and phrases.'), true)),
     h('div', { class: 'row', style: 'margin-top:16px' }, h('button', { onclick: settingsScreen }, '⚙️ Settings & backup')),
@@ -504,6 +533,10 @@ function numbersStart() {
   const list = gens.length ? gens : ['time', 'day'];
   const make = () => makeGen(pick(list));
   runSession('Time & numbers', [make(), make()], { endless: make });
+}
+function classifiersStart() {
+  const make = () => makeGen('classifier');
+  runSession('Classifiers', [make(), make()], { endless: make });
 }
 function situationsStart() {
   runSession('Situations', shuffle(enabledCards().filter((c) => c.kind === 'qa')).slice(0, 12), { practice: true });
