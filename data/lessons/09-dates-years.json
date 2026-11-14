@@ -60,7 +60,7 @@
       "in (… more time); another"
     ],
     [
-      "wan kə̀ət",
+      "wan gə̀ət",
       "วันเกิด",
       "birthday"
     ],
@@ -135,7 +135,7 @@
       "June"
     ],
     [
-      "garágàdaakom / garágàdaa",
+      "gàrágàdaakom / gàrágàdaa",
       "กรกฎาคม",
       "July"
     ],
@@ -187,7 +187,7 @@
       "Eric moved house last Wednesday."
     ],
     [
-      "wan jan tîi 19 kun Eric jà [jàt ngaan] wan kə̀ət tîi roongrɛɛm Novotel",
+      "wan jan tîi 19 kun Eric jà [jàt ngaan] wan gə̀ət tîi roongrɛɛm Novotel",
       "วันจันทร์ที่ 19 คุณเอริคจะจัดงานวันเกิดที่โรงแรมโนโวเทล",
       "On Monday the 19th, Eric will have a birthday party at the Novotel."
     ],
@@ -197,7 +197,7 @@
       "Eric is going to the beach from Thursday the 15th to Sunday the 18th."
     ],
     [
-      "wan kə̀ət kɔ̌ɔng kun [wan tîi] tâorài?",
+      "wan gə̀ət kɔ̌ɔng kun [wan tîi] tâorài?",
       "วันเกิดของคุณวันที่เท่าไร",
       "What date is your birthday?"
     ],
@@ -217,7 +217,7 @@
       "What's the date today?"
     ],
     [
-      "wan kə̀ət kɔ̌ɔng chán dʉan [mítùnaa]",
+      "wan gə̀ət kɔ̌ɔng chán dʉan [mítùnaa]",
       "วันเกิดของฉันเดือนมิถุนายน",
       "My birthday is in June."
     ],
@@ -247,7 +247,7 @@
       "New Year's Day is the 1st of January."
     ],
     [
-      "fǒn dtòk táng dʉan [garágàdaa]",
+      "fǒn dtòk táng dʉan [gàrágàdaa]",
       "ฝนตกทั้งเดือนกรกฎาคม",
       "It rains the whole of July."
     ]
@@ -255,8 +255,8 @@
   "qa": [
     {
       "ctx": "🎂 Your birthday is on the 3rd.",
-      "q": "wan kə̀ət kɔ̌ɔng kun wan tîi tâorài?",
-      "a": "wan kə̀ət kɔ̌ɔng chán wan tîi 3"
+      "q": "wan gə̀ət kɔ̌ɔng kun wan tîi tâorài?",
+      "a": "wan gə̀ət kɔ̌ɔng chán wan tîi 3"
     },
     {
       "ctx": "✈️ You went to Korea last year.",
@@ -270,8 +270,8 @@
     },
     {
       "ctx": "🎂 Your birthday is in June.",
-      "q": "wan kə̀ət kɔ̌ɔng kun dʉan arai?",
-      "a": "wan kə̀ət kɔ̌ɔng chán dʉan mítùnaa"
+      "q": "wan gə̀ət kɔ̌ɔng kun dʉan arai?",
+      "a": "wan gə̀ət kɔ̌ɔng chán dʉan mítùnaa"
     },
     {
       "ctx": "📚 You started Thai classes in September.",

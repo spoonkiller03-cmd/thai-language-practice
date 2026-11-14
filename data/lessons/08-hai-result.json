@@ -3,12 +3,12 @@
   "title": "Do it so that … (verb + hâi + result)",
   "source": "Journey 2 · Chapter 28",
   "notes": [
-    "Verb + hâi + state = do something until/so that it's in that state: àap náam mǎa hâi sà-àat.",
+    "Verb + hâi + state = do something until/so that it's in that state: àap náam mǎa hâi sa'àat.",
     "Often used for instructions and advice: tam ngaan hâi sèt gɔ̀ɔn 4 moong yen ná.",
     "Compare lesson 3: verb + hâi + PERSON (for someone) vs verb + hâi + STATE (result)."
   ],
   "vocab": [
-    ["sà-àat", "สะอาด", "clean"],
+    ["sa'àat", "สะอาด", "clean"],
     ["sèt", "เสร็จ", "finished"],
     ["gɔ̀ɔn", "ก่อน", "before"],
     ["gèng", "เก่ง", "good at, skilled"],
@@ -18,10 +18,10 @@
     ["dang", "ดัง", "loud"]
   ],
   "sentences": [
-    ["àap náam mǎa [hâi] sà-àat", "อาบน้ำหมาให้สะอาด", "Bathe the dog until it's clean."],
+    ["àap náam mǎa [hâi] sa'àat", "อาบน้ำหมาให้สะอาด", "Bathe the dog until it's clean."],
     ["tam ngaan hâi [sèt] gɔ̀ɔn 4 moong yen ná", "ทำงานให้เสร็จก่อน 4 โมงเย็นนะ", "Get the work done before 4 p.m., OK?"],
     ["rian paasǎa tai hâi pûut [gèng]", "เรียนภาษาไทยให้พูดเก่ง", "Study Thai so you can speak it well."],
-    ["tam kwaam sà-àat hɔ̂ng hâi [sà-àat]", "ทำความสะอาดห้องให้สะอาด", "Clean the room properly."],
+    ["tam kwaam sa'àat hɔ̂ng hâi [sa'àat]", "ทำความสะอาดห้องให้สะอาด", "Clean the room properly."],
     ["gin kâao hâi [ìm]", "กินข้าวให้อิ่ม", "Eat until you're full."],
     ["nɔɔn hâi [pɔɔ] ná", "นอนให้พอนะ", "Get enough sleep, OK?"],
     ["pûut hâi [dang-dang] nɔ̀i kâ", "พูดให้ดังๆหน่อยค่ะ", "Please speak a bit louder."],
@@ -30,7 +30,7 @@
     ["kruu pûut cháa-cháa [hâi] nákrian kâojai", "ครูพูดช้าๆให้นักเรียนเข้าใจ", "The teacher speaks slowly so the students understand."]
   ],
   "qa": [
-    {"ctx": "🐶 Your dog is dirty. Tell someone what to do.", "q": "", "a": "àap náam mǎa hâi sà-àat"},
+    {"ctx": "🐶 Your dog is dirty. Tell someone what to do.", "q": "", "a": "àap náam mǎa hâi sa'àat"},
     {"ctx": "😴 Your friend is always tired. Give advice.", "q": "", "a": "nɔɔn hâi pɔɔ ná"},
     {"ctx": "👔 You're the boss: the work must be done before 4 p.m.", "q": "", "a": "tam ngaan hâi sèt gɔ̀ɔn 4 moong yen ná"},
     {"ctx": "🔇 You can't hear the speaker.", "q": "", "a": "pûut hâi dang-dang nɔ̀i kâ"}

@@ -33,7 +33,7 @@
     ["toorasàp", "โทรศัพท์", "telephone"],
     ["kɔ̌ɔtôot", "ขอโทษ", "sorry, excuse me"],
     ["nɔɔn mâi làp", "นอนไม่หลับ", "can't sleep"],
-    ["yə́ə gəənbpai", "เยอะเกินไป", "too much"],
+    ["yə́ gəənbpai", "เยอะเกินไป", "too much"],
     ["mʉ̂agíi", "เมื่อกี้", "a moment ago"],
     ["fǒn dtòk", "ฝนตก", "to rain"]
   ],
@@ -52,7 +52,7 @@
     ["pǒm [hěn] kruu Bingo tîi Terminal 21 mʉ̂awaanníi", "ผมเห็นครูบิงโกที่เทอร์มินอล 21 เมื่อวานนี้", "I saw teacher Bingo at Terminal 21 yesterday."],
     ["kɔ̌ɔtôot ná, chán mâi [dâi yin] sǐang toorasàp", "ขอโทษนะ ฉันไม่ได้ยินเสียงโทรศัพท์", "Sorry, I didn't hear the phone."],
     ["kruu Nam chɔ̂ɔp [fang] pleeng kɔ̌ɔng Blackpink mâak-mâak", "ครูน้ำชอบฟังเพลงของแบล็กพิงก์มากๆ", "Teacher Nam really likes listening to Blackpink."],
-    ["káo [nɔɔn mâi làp] prɔ́-wâa gin gaafɛɛ yə́ə gəənbpai", "เขานอนไม่หลับเพราะว่ากินกาแฟเยอะเกินไป", "He can't sleep because he drank too much coffee."],
+    ["káo [nɔɔn mâi làp] prɔ́-wâa gin gaafɛɛ yə́ gəənbpai", "เขานอนไม่หลับเพราะว่ากินกาแฟเยอะเกินไป", "He can't sleep because he drank too much coffee."],
     ["chán kít [wâa] wanníi fǒn jà dtòk", "ฉันคิดว่าวันนี้ฝนจะตก", "I think it will rain today."],
     ["káo bɔ̀ɔk wâa káo [mâi sabaai]", "เขาบอกว่าเขาไม่สบาย", "She said she's sick."],
     ["kun [rúu] mái wâa kruu bpai nǎi?", "คุณรู้ไหมว่าครูไปไหน", "Do you know where the teacher went?"],

@@ -200,7 +200,7 @@ function thaiTime(hr, m) {
   for (const b of bases) { if (m === 30) out.push(b + ' krʉ̂ng'); out.push(b + ' ' + m + ' naatii'); }
   return out;
 }
-const MONTHS = [['mókgaraa', 'kom', 'January'], ['gumpaa', 'pan', 'February'], ['miinaa', 'kom', 'March'], ['meesǎa', 'yon', 'April'], ['prʉ́tsapaa', 'kom', 'May'], ['mítùnaa', 'yon', 'June'], ['garágàdaa', 'kom', 'July'], ['sǐnghǎa', 'kom', 'August'], ['ganyaa', 'yon', 'September'], ['dtùlaa', 'kom', 'October'], ['prʉ́tsàjìgaa', 'yon', 'November'], ['tanwaa', 'kom', 'December']];
+const MONTHS = [['mókgaraa', 'kom', 'January'], ['gumpaa', 'pan', 'February'], ['miinaa', 'kom', 'March'], ['meesǎa', 'yon', 'April'], ['prʉ́tsapaa', 'kom', 'May'], ['mítùnaa', 'yon', 'June'], ['gàrágàdaa', 'kom', 'July'], ['sǐnghǎa', 'kom', 'August'], ['ganyaa', 'yon', 'September'], ['dtùlaa', 'kom', 'October'], ['prʉ́tsàjìgaa', 'yon', 'November'], ['tanwaa', 'kom', 'December']];
 function monthForms(i) { const [a, b] = MONTHS[i]; return ['dʉan ' + a + b, 'dʉan ' + a, a + b, a]; }
 const GENERATORS = {
   month() {

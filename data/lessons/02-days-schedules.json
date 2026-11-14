@@ -5,7 +5,7 @@
   "notes": [
     "wanníi bpen wan arai? = what day is today?",
     "dtângdtɛ̀ɛ A tʉ̌ng B / dtângdtɛ̀ɛ A jon tʉ̌ng B = from A to/until B.",
-    "bpɔ̀kgadtì (usually) goes at the start of the sentence.",
+    "bpòkgadtì (usually) goes at the start of the sentence.",
     "mʉ̂arài? = when? · tîinǎi? = where? Both go at the end."
   ],
   "generators": ["day"],
@@ -23,7 +23,7 @@
     ["mʉ̂arài", "เมื่อไร", "when?"],
     ["tîinǎi", "ที่ไหน", "where?"],
     ["nát gàp", "นัดกับ", "to have plans / meet up with"],
-    ["bpɔ̀kgadtì", "ปกติ", "usually"],
+    ["bpòkgadtì", "ปกติ", "usually"],
     ["dtângdtɛ̀ɛ", "ตั้งแต่", "from, since"],
     ["jon tʉ̌ng", "จนถึง", "until"],
     ["túk wan", "ทุกวัน", "every day"],
@@ -36,20 +36,20 @@
     ["wanníi bpen wan [sùk]", "วันนี้เป็นวันศุกร์", "Today is Friday."],
     ["mʉ̂awaan bpen wan [pá-rʉ́-hàt]", "เมื่อวานเป็นวันพฤหัส", "Yesterday was Thursday."],
     ["káo [nát gàp] fɛɛn tîi Siam Paragon wan pút", "เขานัดกับแฟนที่สยามพารากอนวันพุธ", "She's meeting her partner at Siam Paragon on Wednesday."],
-    ["[bpɔ̀kgadtì] káo bpai fítnèet wan aatít", "ปกติเขาไปฟิตเนสวันอาทิตย์", "He usually goes to the gym on Sunday."],
+    ["[bpòkgadtì] káo bpai fítnèet wan aatít", "ปกติเขาไปฟิตเนสวันอาทิตย์", "He usually goes to the gym on Sunday."],
     ["pʉ̂an kɔ̌ɔng káo jà [maa hǎa] káo tîi bâan wan jan", "เพื่อนของเขาจะมาหาเขาที่บ้านวันจันทร์", "Her friend will come to see her at home on Monday."],
     ["túk wan káo kâo bɔɔrisàt [dtângdtɛ̀ɛ] 9 moong cháao tʉ̌ng 6 moong yen", "ทุกวันเขาเข้าบริษัทตั้งแต่ 9 โมงเช้าถึง 6 โมงเย็น", "Every day he's at the office from 9 a.m. to 6 p.m."],
     ["chán rian paasǎa tai dtângdtɛ̀ɛ wan jan [jon tʉ̌ng] wan sùk", "ฉันเรียนภาษาไทยตั้งแต่วันจันทร์จนถึงวันศุกร์", "I study Thai from Monday until Friday."],
     ["kun jà bpai Chiang Mai [mʉ̂arài]?", "คุณจะไปเชียงใหม่เมื่อไร", "When are you going to Chiang Mai?"],
     ["rao nát gan [tîinǎi]?", "เรานัดกันที่ไหน", "Where are we meeting?"],
-    ["bpɔ̀kgadtì chán tam ngaan [wan tammadaa]", "ปกติฉันทำงานวันธรรมดา", "I usually work on weekdays."],
+    ["bpòkgadtì chán tam ngaan [wan tammadaa]", "ปกติฉันทำงานวันธรรมดา", "I usually work on weekdays."],
     ["[prûngníi] chán mâi bpai rian", "พรุ่งนี้ฉันไม่ไปเรียน", "Tomorrow I'm not going to class."],
-    ["bpɔ̀kgadtì kun rian paasǎa tai dtɔɔn nǎi, dtângdtɛ̀ɛ gìi moong tʉ̌ng gìi moong?", "ปกติคุณเรียนภาษาไทยตอนไหน ตั้งแต่กี่โมงถึงกี่โมง", "When do you usually study Thai, from what time to what time?"]
+    ["bpòkgadtì kun rian paasǎa tai dtɔɔn nǎi, dtângdtɛ̀ɛ gìi moong tʉ̌ng gìi moong?", "ปกติคุณเรียนภาษาไทยตอนไหน ตั้งแต่กี่โมงถึงกี่โมง", "When do you usually study Thai, from what time to what time?"]
   ],
   "qa": [
     {"ctx": "📅 Today is Wednesday.", "q": "wanníi bpen wan arai?", "a": "wanníi bpen wan pút"},
     {"ctx": "🏢 You're at the office Monday to Friday, 9 a.m. to 6 p.m.", "q": "túk wan kun kâo bɔɔrisàt dtângdtɛ̀ɛ gìi moong tʉ̌ng gìi moong?", "a": "chán kâo bɔɔrisàt dtângdtɛ̀ɛ 9 moong cháao tʉ̌ng 6 moong yen"},
-    {"ctx": "📚 Your Thai class is 3 p.m. to 5 p.m.", "q": "bpɔ̀kgadtì kun rian paasǎa tai dtɔɔn nǎi, dtângdtɛ̀ɛ gìi moong tʉ̌ng gìi moong?", "a": "bpɔ̀kgadtì chán rian paasǎa tai dtɔɔn bàai, dtângdtɛ̀ɛ bàai 3 moong tʉ̌ng 5 moong yen"},
-    {"ctx": "🏋️ You go to the gym on Saturdays.", "q": "bpɔ̀kgadtì kun bpai fítnèet mʉ̂arài?", "a": "bpɔ̀kgadtì chán bpai fítnèet wan sǎo"}
+    {"ctx": "📚 Your Thai class is 3 p.m. to 5 p.m.", "q": "bpòkgadtì kun rian paasǎa tai dtɔɔn nǎi, dtângdtɛ̀ɛ gìi moong tʉ̌ng gìi moong?", "a": "bpòkgadtì chán rian paasǎa tai dtɔɔn bàai, dtângdtɛ̀ɛ bàai 3 moong tʉ̌ng 5 moong yen"},
+    {"ctx": "🏋️ You go to the gym on Saturdays.", "q": "bpòkgadtì kun bpai fítnèet mʉ̂arài?", "a": "bpòkgadtì chán bpai fítnèet wan sǎo"}
   ]
 }
