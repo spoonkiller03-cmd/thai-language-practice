@@ -11,6 +11,7 @@ A static PWA (no build step) hosted on GitHub Pages from `main`. The owner sends
   - `qa` = a real situation (emoji + English context) + an optional Thai question + a model answer. These are self-graded.
   - Card ids are derived from the romanization text, so editing a sentence's text resets its progress. Fix typos when needed, but don't churn.
 - `app.js`: the app. `GENERATORS` makes random, endless items (time, duration, day, date, month, year, ordinal, meaning, classifier). A lesson turns a generator on by listing it in `generators`.
+- Every card is multiple choice (the owner asked for no typing, 2026-11-15). Wrong options come from the same lesson first, then other lessons, so keep bracketed cloze targets varied within a lesson. Cloze cards always show the English meaning, so a distractor that fits grammatically is ruled out by the meaning. A generator item lists wrong answers in `distract` (best ones first) and `makeGen` turns it into options. `qa` answers containing "(example)" are open questions: the app shows them as think-then-compare cards, not options.
 - `sw.js`: network-first cache. Bump `CACHE` only if the cached shell needs a hard reset.
 
 ## Romanization (match the class exactly: Duke Language School, Journey 2)

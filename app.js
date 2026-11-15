@@ -3,7 +3,7 @@
    Content lives in data/lessons/*.json (listed in data/index.json).
    Progress is stored on this device only (localStorage) and can be exported. */
 
-const APP_VERSION = '1.2.0';
+const APP_VERSION = '1.3.0';
 const STORE_KEY = 'thai-practice.v1';
 const DAY = 86400000;
 const INTERVALS = [0, 1, 3, 7, 14, 30, 60]; // days, by box
@@ -66,17 +66,6 @@ function norm(s, level) {
   if (level >= 2) s = s.replace(/ɔ/g, 'o').replace(/ɛ/g, 'e').replace(/ʉ/g, 'u').replace(/ə/g, 'e').replace(/(.)\1+/g, '$1');
   return s;
 }
-/* returns 'right' | 'tones' | 'close' | 'wrong' */
-function check(input, answers) {
-  if (!norm(input, 0)) return 'wrong';
-  const list = answers.flatMap((a) => a.split(' / '));
-  for (const lvl of [0, 1, 2]) {
-    const x = norm(input, lvl);
-    if (list.some((a) => norm(a, lvl) === x)) return ['right', 'tones', 'close'][lvl];
-  }
-  return 'wrong';
-}
-
 /* ---------- speech ---------- */
 let thaiVoice = null;
 function pickVoice() {
@@ -208,11 +197,11 @@ const GENERATORS = {
     const i = rand(12); const mode = rand(3);
     if (mode === 0) {
       const f = monthForms(i);
-      return { kind: 'typed', label: 'Months', ctx: '📅 It is ' + MONTHS[i][2] + '.', q: 'dʉan níi dʉan arai?', answers: f.map((x) => 'dʉan níi ' + x).concat(f), show: 'dʉan níi ' + f[0] };
+      return { kind: 'typed', label: 'Months', ctx: '📅 It is ' + MONTHS[i][2] + '.', q: 'dʉan níi dʉan arai?', answers: f.map((x) => 'dʉan níi ' + x).concat(f), show: 'dʉan níi ' + f[0], distract: [1, 11, 2, 10, 6].map((k) => 'dʉan níi ' + monthForms((i + k) % 12)[0]) };
     }
     const fwd = mode === 1; const j = (i + (fwd ? 1 : 11)) % 12; const w = fwd ? 'dʉan nâa' : 'dʉan tîilɛ́ɛo';
     const f = monthForms(j);
-    return { kind: 'typed', label: 'Months', ctx: 'Work it out in Thai.', q: 'dʉan níi dʉan ' + MONTHS[i][0] + MONTHS[i][1] + ', ' + w + ' dʉan arai?', answers: f.map((x) => w + ' ' + x).concat(f), show: w + ' ' + f[0] };
+    return { kind: 'typed', label: 'Months', ctx: 'Work it out in Thai.', q: 'dʉan níi dʉan ' + MONTHS[i][0] + MONTHS[i][1] + ', ' + w + ' dʉan arai?', answers: f.map((x) => w + ' ' + x).concat(f), show: w + ' ' + f[0], distract: [0, 1, 11, 2, 10].map((k) => w + ' ' + monthForms((j + k) % 12)[0]).filter((x, n) => n > 0 || j !== i) };
   },
   time() {
     const hr = rand(24);
@@ -220,7 +209,7 @@ const GENERATORS = {
     const m = r < 0.45 ? 0 : r < 0.6 ? 30 : 1 + rand(59);
     const icon = hr <= 5 ? '🌌' : hr <= 11 ? '🌅' : hr <= 15 ? '☀️' : hr <= 18 ? '🌇' : '🌙';
     const ans = thaiTime(hr, m);
-    return { kind: 'typed', label: 'Time · say it the Thai way', ctx: 'What time is it?', big: icon + ' ' + String(hr).padStart(2, '0') + ':' + String(m).padStart(2, '0'), answers: ans, show: ans[0], note: 'Numbers as digits are fine.' };
+    return { kind: 'typed', label: 'Time · say it the Thai way', ctx: 'What time is it?', big: icon + ' ' + String(hr).padStart(2, '0') + ':' + String(m).padStart(2, '0'), answers: ans, show: ans[0], distract: [1, 23, 12, 6, 18].map((k) => thaiTime((hr + k) % 24, m)[0]) };
   },
   duration() {
     const T = [
@@ -235,30 +224,31 @@ const GENERATORS = {
     const n = u[2] + rand(u[3] - u[2] + 1);
     const d = n + ' ' + u[0];
     const answers = t.a.map((a) => a.replace('{d}', d)).concat(['naan ' + d + ' lɛ́ɛo', 'naan ' + d, d + ' lɛ́ɛo', d]);
-    return { kind: 'typed', label: 'How long? · answer in a sentence', ctx: t.ctx + ' ' + n + ' ' + u[1] + '.', q: t.q, answers, show: answers[0] };
+    const distract = U.filter((x) => x !== u).map((x) => t.a[0].replace('{d}', n + ' ' + x[0])).concat([t.a[0].replace('{d}', (n + 1) + ' ' + u[0])]);
+    return { kind: 'typed', label: 'How long?', ctx: t.ctx + ' ' + n + ' ' + u[1] + '.', q: t.q, answers, show: answers[0], distract };
   },
   day() {
     const i = rand(7);
     const mode = rand(3);
     if (mode === 0) {
       const ans = ['wanníi bpen ' + DAYS[i][0], DAYS[i][0]];
-      return { kind: 'typed', label: 'Days', ctx: '📅 Today is ' + DAYS[i][1] + '.', q: 'wanníi bpen wan arai?', answers: ans, show: ans[0] };
+      return { kind: 'typed', label: 'Days', ctx: '📅 Today is ' + DAYS[i][1] + '.', q: 'wanníi bpen wan arai?', answers: ans, show: ans[0], distract: [1, 6, 2, 5].map((k) => 'wanníi bpen ' + DAYS[(i + k) % 7][0]) };
     }
     const fwd = mode === 1;
     const j = (i + (fwd ? 1 : 6)) % 7;
     const w = fwd ? 'prûngníi' : 'mʉ̂awaan';
     const ans = [w + ' bpen ' + DAYS[j][0], DAYS[j][0]];
-    return { kind: 'typed', label: 'Days', ctx: 'Work it out in Thai.', q: 'wanníi bpen ' + DAYS[i][0] + ', ' + w + ' bpen wan arai?', answers: ans, show: ans[0] };
+    return { kind: 'typed', label: 'Days', ctx: 'Work it out in Thai.', q: 'wanníi bpen ' + DAYS[i][0] + ', ' + w + ' bpen wan arai?', answers: ans, show: ans[0], distract: [0, fwd ? 6 : 1, fwd ? 2 : 5, fwd ? 5 : 2].map((k) => w + ' bpen ' + DAYS[(i + k) % 7][0]) };
   },
   date() {
     const i = rand(7); const n = 1 + rand(31);
     const ans = ['wanníi ' + DAYS[i][0] + ' tîi ' + n, DAYS[i][0] + ' tîi ' + n, 'wanníi wan tîi ' + n, 'wan tîi ' + n];
-    return { kind: 'typed', label: 'Dates', ctx: '📅 Today is ' + DAYS[i][1] + ' the ' + n + ordSuffix(n) + '.', q: 'wanníi wan arai, wan tîi tâorài?', answers: ans, show: ans[0] };
+    return { kind: 'typed', label: 'Dates', ctx: '📅 Today is ' + DAYS[i][1] + ' the ' + n + ordSuffix(n) + '.', q: 'wanníi wan arai, wan tîi tâorài?', answers: ans, show: ans[0], distract: ['wanníi ' + DAYS[(i + 1) % 7][0] + ' tîi ' + n, 'wanníi ' + DAYS[i][0] + ' tîi ' + (n === 31 ? 30 : n + 1), 'wanníi ' + DAYS[(i + 6) % 7][0] + ' tîi ' + (n === 1 ? 2 : n - 1), 'wanníi ' + DAYS[(i + 3) % 7][0] + ' tîi ' + n] };
   },
   year() {
     const base = 2015 + rand(15); const n = 2 + rand(14);
     const ans = ['ìik ' + n + ' bpii bpen bpii ' + (base + n), 'bpii ' + (base + n), String(base + n)];
-    return { kind: 'typed', label: 'Years', ctx: 'Work it out in Thai.', q: 'bpii níi bpii ' + base + ', ìik ' + n + ' bpii bpen bpii arai?', answers: ans, show: ans[0] };
+    return { kind: 'typed', label: 'Years', ctx: 'Work it out in Thai.', q: 'bpii níi bpii ' + base + ', ìik ' + n + ' bpii bpen bpii arai?', answers: ans, show: ans[0], distract: [1, -1, 10, -2 * n].map((k) => 'ìik ' + n + ' bpii bpen bpii ' + (base + n + k)) };
   },
   ordinal() {
     const people = Math.random() < 0.35;
@@ -267,7 +257,7 @@ const GENERATORS = {
     const k = 1 + rand(5);
     const cl = people ? 'kon' : 'dtua';
     const ans = [cl + ' tîi ' + k, 'tîi ' + k];
-    return { kind: 'typed', label: 'Ordinals', ctx: 'Count from the left. Which one is ' + row[k - 1] + '?', big: row.join(' '), q: (people ? 'kon' : 'dtua') + ' nǎi?', answers: ans, show: ans[0] };
+    return { kind: 'typed', label: 'Ordinals', ctx: 'Count from the left. Which one is ' + row[k - 1] + '?', big: row.join(' '), q: (people ? 'kon' : 'dtua') + ' nǎi?', answers: ans, show: ans[0], distract: [1, 2, 3, 4, 5].filter((x) => x !== k).map((x) => cl + ' tîi ' + x) };
   },
   classifier() {
     const nouns = LESSONS.filter((L) => lessonOn(L.id)).flatMap((L) => L.nouns || []);
@@ -283,11 +273,14 @@ const GENERATORS = {
       const D = [['níi', 'นี้', 'this'], ['nán', 'นั้น', 'that'], ['nóon', 'โน้น', 'that one over there']];
       const [d, dTh, dEn] = pick(D);
       const ans = [r + ' ' + cl + ' ' + d, cl + ' ' + d];
-      return { kind: 'typed', label: 'Classifiers · this / that', ctx: '👉 Say "' + dEn + ' ' + en + '" in Thai.', big: emo, q: r + ' + ' + d, answers: ans, show: ans[0], th: th + clTh + dTh, en: dEn + ' ' + en, note: 'noun + classifier + níi / nán / nóon' };
+      const others = shuffle([...new Set(nouns.map((x) => x[4]))].filter((x) => x !== cl));
+      const distract = others.slice(0, 2).map((c) => r + ' ' + c + ' ' + d).concat(D.filter((x) => x[0] !== d).map((x) => r + ' ' + cl + ' ' + x[0]).slice(0, 1));
+      return { kind: 'typed', label: 'Classifiers · this / that', ctx: '👉 Say "' + dEn + ' ' + en + '" in Thai.', big: emo, q: r + ' + ' + d, answers: ans, show: ans[0], distract, th: th + clTh + dTh, en: dEn + ' ' + en, note: 'noun + classifier + níi / nán / nóon' };
     }
     const n = 2 + rand(5);
     const ans = [r + ' ' + n + ' ' + cl, n + ' ' + cl, 'mii ' + r + ' ' + n + ' ' + cl];
-    return { kind: 'typed', label: 'Classifiers · count them', ctx: 'How many? Answer with noun + number + classifier.', big: emo.repeat(n), q: r + ' (' + en + ')', answers: ans, show: ans[0], th: th + ' ' + n + ' ' + clTh, en: n + ' × ' + en };
+    const distract = shuffle([...new Set(nouns.map((x) => x[4]))].filter((x) => x !== cl)).slice(0, 3).map((c) => r + ' ' + n + ' ' + c);
+    return { kind: 'typed', label: 'Classifiers · count them', ctx: 'How many? Pick noun + number + classifier.', distract, big: emo.repeat(n), q: r + ' (' + en + ')', answers: ans, show: ans[0], th: th + ' ' + n + ' ' + clTh, en: n + ' × ' + en };
   },
   meaning() {
     const pool = enabledCards().filter((c) => c.kind === 'vocabRec');
@@ -297,25 +290,23 @@ const GENERATORS = {
   },
 };
 function ordSuffix(n) { if (n % 100 >= 11 && n % 100 <= 13) return 'th'; return ['th', 'st', 'nd', 'rd'][n % 10] || 'th'; }
-function makeGen(name) { const g = GENERATORS[name](); g.gen = name; return g; }
-
-/* ---------- card views ---------- */
-const KEYS = [['ɔ', 'ɔ'], ['ɛ', 'ɛ'], ['ʉ', 'ʉ'], ['ə', 'ə'], ['à', '̀'], ['â', '̂'], ['á', '́'], ['ǎ', '̌']];
-function keyRow(input) {
-  return h('div', { class: 'keys', 'aria-label': 'Special characters' },
-    KEYS.map(([label, ch]) => h('button', {
-      type: 'button',
-      title: ch.length === 1 && ch < 'Ͱ' && ch >= '̀' ? 'add tone mark to the last letter' : 'insert ' + label,
-      onmousedown: (e) => e.preventDefault(),
-      onclick: () => {
-        const s = input.selectionStart ?? input.value.length, e = input.selectionEnd ?? s;
-        input.value = input.value.slice(0, s) + ch + input.value.slice(e);
-        input.setSelectionRange(s + ch.length, s + ch.length);
-        input.focus();
-      },
-    }, label)));
+function makeGen(name) {
+  const g = GENERATORS[name](); g.gen = name;
+  if (g.kind === 'typed') {
+    const ok = new Set(g.answers.map((a) => norm(a, 0)));
+    g.options = choices(g.show, (g.distract || []).filter((x) => !ok.has(norm(x, 0))));
+    g.correct = g.show; g.kind = 'mc';
+  }
+  return g;
+}
+// correct answer + up to 3 distinct distractors (in the order given: put the best ones first), shuffled
+function choices(correct, candidates, n = 3) {
+  const seen = new Set([correct]); const out = [];
+  for (const c of candidates) { if (c && !seen.has(c)) { seen.add(c); out.push(c); } if (out.length >= n) break; }
+  return shuffle([correct, ...out]);
 }
 
+/* ---------- card views ---------- */
 function feedback(res, shownAnswer, extra) {
   const map = {
     right: ['right', '✓ Correct'],
@@ -336,81 +327,59 @@ function reveal(item) {
     audioRow(item.th));
 }
 
-function typedCard(item, done) {
-  let prompt, answers, shown, kindLabel;
-  if (item.kind === 'vocabProd') {
-    kindLabel = 'Say it in Thai'; answers = [item.r]; shown = item.r;
-    prompt = [h('div', { class: 'prompt' }, item.en)];
-  } else if (item.kind === 'cloze') {
-    kindLabel = 'Fill the gap'; answers = [item.target]; shown = item.target;
-    const parts = item.r.split(/\[[^\]]+\]/);
-    const hint = h('div', { class: 'hint', hidden: true }, item.en);
-    prompt = [h('div', { class: 'prompt' }, parts[0], h('span', { class: 'blank' }, ' '), parts[1] || ''),
-      h('button', { class: 'ghost', type: 'button', onclick: (e) => { hint.hidden = false; e.target.remove(); } }, 'Show meaning'), hint];
-  } else { // generator
-    kindLabel = item.label; answers = item.answers; shown = item.show;
-    prompt = [item.ctx ? h('div', { class: 'ctx' }, item.ctx) : null,
-      item.big ? h('div', { class: 'prompt huge clock' }, item.big) : null,
-      item.q ? h('div', { class: 'prompt' }, item.q) : null,
-      item.note ? h('div', { class: 'hint' }, item.note) : null];
-  }
-  const input = h('input', { class: 'answer', type: 'text', autocomplete: 'off', autocapitalize: 'off', autocorrect: 'off', spellcheck: 'false', placeholder: 'Type in romanization…', 'aria-label': 'Your answer' });
-  const out = h('div');
-  const actions = h('div', { class: 'row' });
-  let result = null;
-  function finish(res) {
-    result = res;
-    input.disabled = true;
-    const alts = answers.length > 1 && item.gen ? h('div', { class: 'small muted' }, 'Also OK: ' + answers.slice(1, 4).join(' · ')) : null;
-    out.replaceChildren(...[feedback(res, shown, alts), item.gen ? (item.th ? reveal({ th: item.th, en: item.en }) : null) : reveal(item)].filter(Boolean));
-    actions.replaceChildren(...[
-      res !== 'right' ? h('button', { onclick: () => next('right') }, 'I was right') : null,
-      h('button', { class: 'primary', onclick: () => next(res === 'right' ? 'right' : res === 'wrong' ? 'wrong' : 'almost') }, 'Next')].filter(Boolean));
-    actions.querySelector('.primary').focus();
-    if (item.th && res === 'right') speak(item.th);
-  }
-  function next(g) { done(g); }
-  function submit() { if (result) return; finish(check(input.value, answers)); }
-  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submit(); } });
-  actions.append(h('button', { onclick: () => { input.value = ''; finish('wrong'); } }, "Don't know"), h('button', { class: 'primary', onclick: submit }, 'Check'));
-  if (item.kind === 'cloze') {
-    // optional options hint from the same lesson
-    const L = LESSONS.find((l) => l.id === item.lesson);
-    const targets = [...new Set((L.sentences || []).map((s) => (s[0].match(/\[([^\]]+)\]/) || [])[1]).filter(Boolean))];
-    const opts = shuffle([item.target, ...shuffle(targets.filter((t) => t !== item.target)).slice(0, 3)]);
-    const optBox = h('div', { class: 'hint', hidden: true }, 'One of: ' + opts.join(' · '));
-    prompt.push(h('button', { class: 'ghost', type: 'button', onclick: (e) => { optBox.hidden = false; e.target.remove(); } }, 'Show options'), optBox);
-  }
-  const node = h('div', { class: 'card' }, h('div', { class: 'kind' }, kindLabel), prompt, input, keyRow(input), actions, out);
-  setTimeout(() => input.focus(), 50);
-  return node;
+function lessonFirst(item, pool) {
+  const near = shuffle(pool.filter((c) => c.lesson === item.lesson));
+  return near.slice(0, 2).concat(shuffle(pool.filter((c) => c.lesson !== item.lesson)), near.slice(2));
 }
 
 function mcCard(item, done) {
-  let options, correct, prompt, kindLabel;
+  let options, correct, prompt, kindLabel, showReveal = true, revealItem = item;
   if (item.kind === 'vocabRec') {
     kindLabel = 'What does it mean?';
     const pool = CARDS.filter((c) => c.kind === 'vocabRec' && c.en !== item.en);
-    options = shuffle([item.en, ...shuffle(pool).slice(0, 3).map((c) => c.en)]); correct = item.en;
+    options = choices(item.en, lessonFirst(item, pool).map((c) => c.en)); correct = item.en;
     prompt = [h('div', { class: 'prompt huge' }, item.r), audioRow(item.th)];
+  } else if (item.kind === 'vocabProd') {
+    kindLabel = 'How do you say it in Thai?';
+    const pool = CARDS.filter((c) => c.kind === 'vocabProd' && c.r !== item.r);
+    options = choices(item.r, lessonFirst(item, pool).map((c) => c.r)); correct = item.r;
+    prompt = [h('div', { class: 'prompt' }, item.en)];
+  } else if (item.kind === 'cloze') {
+    kindLabel = 'Fill the gap';
+    const L = LESSONS.find((l) => l.id === item.lesson);
+    const tg = (x) => (x.match(/\[([^\]]+)\]/) || [])[1];
+    const near = shuffle([...new Set((L.sentences || []).map((x) => tg(x[0])).filter(Boolean))]);
+    const far = shuffle(CARDS.filter((c) => c.kind === 'cloze' && c.lesson !== item.lesson).map((c) => c.target));
+    options = choices(item.target, near.concat(far)); correct = item.target;
+    const parts = item.r.split(/\[[^\]]+\]/);
+    // the English meaning is always shown: with options, it's what rules out words that would also fit grammatically
+    prompt = [h('div', { class: 'prompt' }, parts[0], h('span', { class: 'blank' }, ' '), parts[1] || ''), h('div', { class: 'hint' }, item.en)];
   } else if (item.kind === 'listen') {
     kindLabel = 'Listen · what does it mean?';
     const same = CARDS.filter((c) => c.kind === 'listen' && c.en !== item.en);
-    const near = shuffle(same.filter((c) => c.lesson === item.lesson)).slice(0, 2);
-    const far = shuffle(same.filter((c) => !near.includes(c))).slice(0, 3 - near.length);
-    options = shuffle([item.en, ...near.concat(far).map((c) => c.en)]); correct = item.en;
+    options = choices(item.en, lessonFirst(item, same).map((c) => c.en)); correct = item.en;
     prompt = canSpeak() ? [h('div', { class: 'prompt huge' }, '🎧'), audioRow(item.th)] : [h('div', { class: 'prompt' }, item.r), h('p', { class: 'hint' }, 'No speech on this device; reading instead.')];
     setTimeout(() => speak(item.th), 250);
   } else if (item.kind === 'recall') {
     kindLabel = 'Which picture matches?';
-    const pool = shuffle(CARDS.filter((c) => c.kind === 'recall' && c.emo !== item.emo));
-    const near = pool.filter((c) => c.lesson === item.lesson);
-    const others = [...new Set(near.concat(pool).map((c) => c.emo))].slice(0, 3);
-    options = shuffle([item.emo, ...others]); correct = item.emo;
+    const pool = CARDS.filter((c) => c.kind === 'recall' && c.emo !== item.emo);
+    options = choices(item.emo, lessonFirst(item, pool).map((c) => c.emo)); correct = item.emo;
     prompt = [h('div', { class: 'prompt' }, item.r), audioRow(item.th)];
-  } else { // generator mc
+  } else if (item.kind === 'qa') {
+    kindLabel = 'Real situation · what do you say?';
+    const pool = CARDS.filter((c) => c.kind === 'qa' && c.a !== item.a && !isOpenQa(c));
+    options = choices(item.a, lessonFirst(item, pool).map((c) => c.a)); correct = item.a;
+    prompt = [h('div', { class: 'ctx' }, item.ctx), item.q ? h('div', { class: 'prompt' }, item.q) : null];
+    showReveal = false;
+  } else { // generator
     kindLabel = item.label; options = item.options; correct = item.correct;
-    prompt = [h('div', { class: 'prompt' }, item.q), audioRow(item.th)];
+    prompt = [item.ctx ? h('div', { class: 'ctx' }, item.ctx) : null,
+      item.big ? h('div', { class: 'prompt huge clock' }, item.big) : null,
+      item.q ? h('div', { class: 'prompt' }, item.q) : null,
+      item.note ? h('div', { class: 'hint' }, item.note) : null,
+      item.kind === 'mc' && !item.ctx ? audioRow(item.th) : null];
+    showReveal = !!(item.th && item.ctx);
+    revealItem = { th: item.th, en: item.en };
   }
   const out = h('div');
   const box = h('div', { class: 'choices' + (item.kind === 'recall' ? ' emoji' : '') });
@@ -421,40 +390,35 @@ function mcCard(item, done) {
         if (answered) return; answered = true;
         const ok = o === correct;
         e.currentTarget.classList.add(ok ? 'correct' : 'wrong');
-        [...box.children].forEach((b) => { if (b.textContent === correct) b.classList.add('correct'); });
-        out.replaceChildren(...[feedback(ok ? 'right' : 'wrong', correct), item.kind === 'listen' || item.kind === 'vocabRec' || item.kind === 'recall' ? reveal(item) : null,
+        [...box.children].forEach((b) => { b.disabled = true; if (b.textContent === correct) b.classList.add('correct'); });
+        if (ok && revealItem.th) speak(revealItem.th);
+        out.replaceChildren(...[feedback(ok ? 'right' : 'wrong', correct), showReveal ? reveal(revealItem) : null,
           h('div', { class: 'row', style: 'margin-top:12px' }, h('button', { class: 'primary', onclick: () => done(ok ? 'right' : 'wrong') }, 'Next'))].filter(Boolean));
+        out.querySelector('.primary').focus();
       },
     }, o));
   }
   return h('div', { class: 'card' }, h('div', { class: 'kind' }, kindLabel), prompt, box, out);
 }
 
-function qaCard(item, done) {
-  const ta = h('textarea', { class: 'answer', placeholder: 'Say it out loud, or type it (optional)…', 'aria-label': 'Your answer' });
+// open questions ("(example) …") have no single right answer: think of yours, then compare
+function isOpenQa(c) { return /\(example\)/i.test(c.a); }
+function openQaCard(item, done) {
   const out = h('div');
   const actions = h('div', { class: 'row' });
   function showAnswer() {
-    ta.disabled = true;
-    const model = h('div', { class: 'fb right' }, h('div', { class: 'head' }, 'One good answer'), h('div', { class: 'ans' }, item.a));
-    let auto = null;
-    if (ta.value.trim()) {
-      const r = check(ta.value, [item.a.replace(/\s*\(.*?\)\s*/g, '')]);
-      auto = h('p', { class: 'small muted' }, r === 'right' ? 'Matches exactly.' : r === 'wrong' ? 'Different from the model. That can still be right; judge it yourself.' : 'Very close: check tones and vowels.');
-    }
-    out.replaceChildren(...[model, auto].filter(Boolean));
-    actions.replaceChildren(h('button', { onclick: () => done('wrong') }, 'Again'), h('button', { onclick: () => done('almost') }, 'Almost'), h('button', { class: 'primary', onclick: () => done('right') }, 'Got it'));
+    out.replaceChildren(h('div', { class: 'fb right' }, h('div', { class: 'head' }, 'One possible answer'), h('div', { class: 'ans' }, item.a.replace(/\(example\)\s*/i, ''))));
+    actions.replaceChildren(h('button', { onclick: () => done('wrong') }, 'Again'), h('button', { class: 'primary', onclick: () => done('right') }, 'I could say it'));
   }
-  actions.append(h('button', { class: 'primary', onclick: showAnswer }, 'Show answer'));
-  return h('div', { class: 'card' }, h('div', { class: 'kind' }, 'Real situation · answer in Thai'),
-    h('div', { class: 'ctx' }, item.ctx), item.q ? h('div', { class: 'prompt' }, item.q) : h('div', { class: 'hint' }, 'What do you say?'),
-    ta, keyRow(ta), actions, out);
+  actions.append(h('button', { class: 'primary', onclick: showAnswer }, 'Show an answer'));
+  return h('div', { class: 'card' }, h('div', { class: 'kind' }, 'Your answer · say it in your head'),
+    h('div', { class: 'ctx' }, item.ctx), item.q ? h('div', { class: 'prompt' }, item.q) : null,
+    h('p', { class: 'hint' }, 'There is no single right answer here. Think of yours in Thai, then compare.'), actions, out);
 }
 
 function renderItem(item, done) {
-  if (item.kind === 'qa') return qaCard(item, done);
-  if (item.kind === 'vocabRec' || item.kind === 'listen' || item.kind === 'recall' || item.kind === 'mc') return mcCard(item, done);
-  return typedCard(item, done);
+  if (item.kind === 'qa' && isOpenQa(item)) return openQaCard(item, done);
+  return mcCard(item, done);
 }
 
 /* ---------- session ---------- */
