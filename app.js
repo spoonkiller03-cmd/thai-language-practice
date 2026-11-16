@@ -3,7 +3,7 @@
    Content lives in data/lessons/*.json (listed in data/index.json).
    Progress is stored on this device only (localStorage) and can be exported. */
 
-const APP_VERSION = '1.3.0';
+const APP_VERSION = '1.4.0';
 const STORE_KEY = 'thai-practice.v1';
 const DAY = 86400000;
 const INTERVALS = [0, 1, 3, 7, 14, 30, 60]; // days, by box
@@ -11,6 +11,7 @@ const INTERVALS = [0, 1, 3, 7, 14, 30, 60]; // days, by box
 const app = document.getElementById('app');
 let LESSONS = [];
 let CARDS = [];
+let SONGS = [];
 
 /* ---------- state ---------- */
 function defaultState() {
@@ -97,6 +98,10 @@ async function loadData() {
   const files = await Promise.all(idx.lessons.map((f) => fetch('data/lessons/' + f, { cache: 'no-cache' }).then((r) => r.json())));
   LESSONS = files;
   buildCards();
+  try {
+    const si = await (await fetch('data/songs/index.json', { cache: 'no-cache' })).json();
+    SONGS = await Promise.all(si.songs.map((f) => fetch('data/songs/' + f, { cache: 'no-cache' }).then((r) => r.json())));
+  } catch (e) { SONGS = []; }
 }
 function buildCards() {
   CARDS = [];
@@ -476,7 +481,7 @@ function home() {
       tile('💬', 'Situations', 'What would you say?', situationsStart),
       tile('🔢', 'Classifiers', 'Endless counting drill', classifiersStart),
       tile('⌨️', 'Typing in Thai', 'Unlocks in December', () => lockedScreen('Typing in Thai', 'This section opens when you start learning to write (December). Send your writing lessons as you go and they will be added level by level, using only letters you have learned.'), true),
-      tile('🎵', 'Songs', 'Coming later', () => lockedScreen('Songs', 'Send song titles, artists and links when you are ready. Each song will get its link plus practice cards for its words and phrases.'), true)),
+      tile('🎵', 'Songs', SONGS.length ? SONGS.length + (SONGS.length === 1 ? ' song' : ' songs') + ' · learn with music' : 'Coming soon', songsScreen)),
     h('div', { class: 'row', style: 'margin-top:16px' }, h('button', { onclick: settingsScreen }, '⚙️ Settings & backup')),
     h('p', { class: 'small muted center', style: 'margin-top:16px' }, 'Progress is saved on this device only. v' + APP_VERSION));
 }
@@ -537,6 +542,89 @@ function lessonScreen(L) {
       h('tr', { onclick: () => speak(th) }, h('td', null, r, h('div', { class: 'thai small muted' }, th)), h('td', null, en))))),
     h('p', { class: 'small muted' }, canSpeak() ? 'Tap a word to hear it.' : ''));
 }
+/* ---------- songs (study pages, not quizzes) ---------- */
+let ytReady = null;
+function loadYouTube() {
+  if (ytReady) return ytReady;
+  ytReady = new Promise((resolve, reject) => {
+    if (window.YT && window.YT.Player) return resolve(window.YT);
+    window.onYouTubeIframeAPIReady = () => resolve(window.YT);
+    const sc = document.createElement('script');
+    sc.src = 'https://www.youtube.com/iframe_api';
+    sc.onerror = () => { ytReady = null; reject(new Error('offline')); };
+    document.head.append(sc);
+  });
+  return ytReady;
+}
+function songsScreen() {
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  show(topbar('Songs'),
+    h('p', { class: 'small muted' }, 'Learn Thai with music: watch the video, study the key lines and their casual words, then sing along with the full lyrics.'),
+    SONGS.length ? h('div', { class: 'list' }, SONGS.map((sg) =>
+      h('div', { class: 'lesson' },
+        h('div', { class: 'info', role: 'button', tabindex: '0', onclick: () => songScreen(sg), onkeydown: (e) => { if (e.key === 'Enter') songScreen(sg); } },
+          h('div', { class: 't' }, '🎵 ' + sg.title),
+          h('div', { class: 's' }, sg.artist + (sg.year ? ' · ' + sg.year : '') + ' · ' + sg.lines.length + ' key lines · ' + sg.words.length + ' words')),
+        h('span', { class: 'muted' }, '›'))))
+      : h('p', null, 'No songs yet.'));
+}
+function songScreen(sg) {
+  S.songTimes = S.songTimes || {};
+  const times = (S.songTimes[sg.id] = S.songTimes[sg.id] || {});
+  let player = null;
+  const frame = h('div', { class: 'video' }, h('div', { id: 'yt-' + sg.id }));
+  const fallback = h('p', { class: 'small muted', hidden: true }, 'The video needs an internet connection. ', h('a', { href: 'https://www.youtube.com/watch?v=' + sg.youtube, target: '_blank', rel: 'noopener' }, 'Open it on YouTube'));
+  const fmt = (t) => Math.floor(t / 60) + ':' + String(Math.floor(t % 60)).padStart(2, '0');
+  let hideEn = false;
+  const lineCards = sg.lines.map((ln, i) => {
+    const en = h('div', { class: 'hint' }, ln.en);
+    const playBtn = h('button', { type: 'button', onclick: () => {
+      if (player && times[i] != null) { player.seekTo(Math.max(0, times[i] - 1), true); player.playVideo(); }
+    } });
+    const setBtn = h('button', { type: 'button', class: 'ghost', onclick: () => {
+      if (!player || !player.getCurrentTime) return;
+      times[i] = Math.round(player.getCurrentTime() * 10) / 10; save(); refresh();
+    } }, '⏱ Set');
+    function refresh() {
+      playBtn.textContent = times[i] != null ? '▶ ' + fmt(times[i]) : '▶ –';
+      playBtn.disabled = times[i] == null;
+    }
+    refresh();
+    const card = h('div', { class: 'card songline' },
+      h('div', { class: 'prompt' }, ln.r),
+      h('div', { class: 'thai' }, ln.th), en,
+      ln.note ? h('details', null, h('summary', null, 'Why it’s said this way'), h('p', { class: 'small' }, ln.note)) : null,
+      h('div', { class: 'row', style: 'margin-top:8px' },
+        canSpeak() ? h('button', { type: 'button', onclick: () => speak(ln.th, true) }, '🔊 Slow') : null, playBtn, setBtn));
+    card._en = en;
+    return card;
+  });
+  const toggle = h('button', { type: 'button', class: 'ghost', onclick: (e) => {
+    hideEn = !hideEn; lineCards.forEach((c) => { c._en.hidden = hideEn; });
+    e.currentTarget.textContent = hideEn ? 'Show English' : 'Hide English (test yourself)';
+  } }, 'Hide English (test yourself)');
+  show(topbar('Song'),
+    h('h1', null, sg.title), h('p', { class: 'muted small' }, sg.artist + (sg.year ? ' · ' + sg.year : '')),
+    frame, fallback,
+    h('p', { class: 'small' }, h('a', { href: 'https://www.youtube.com/watch?v=' + sg.youtube, target: '_blank', rel: 'noopener' }, 'Video not playing here? Open it on YouTube')),
+    sg.about ? h('p', null, sg.about) : null,
+    h('h2', null, 'Key lines'),
+    h('p', { class: 'small muted' }, 'While the song plays, tap ⏱ when a line starts. Next time, ▶ jumps straight to it. Times are saved on this device.'),
+    toggle,
+    h('div', { class: 'stack' }, lineCards),
+    h('h2', null, 'Words'),
+    h('table', { class: 'vocab' }, h('tbody', null, sg.words.map(([r, th, en]) =>
+      h('tr', { onclick: () => speak(th) }, h('td', null, r, h('div', { class: 'thai small muted' }, th)), h('td', null, en))))),
+    h('h2', null, 'Notes'), h('ul', { class: 'notes' }, (sg.notes || []).map((n) => h('li', null, n))),
+    h('div', { class: 'stack', style: 'margin-top:12px' },
+      h('a', { class: 'button', href: sg.lyricsUrl, target: '_blank', rel: 'noopener' }, '📄 Full lyrics (Thai, their romanization, English)'),
+      h('button', { onclick: songsScreen }, '← All songs')),
+    h('p', { class: 'small muted' }, 'The full-lyrics site uses a different romanization from your class (e.g. "tur" = təə, "jai rai" = jai ráai, "dtae gor" = dtɛ̀ɛ gɔ̂ɔ). Trust the class spelling on this page.'));
+  loadYouTube().then((YT) => {
+    player = new YT.Player('yt-' + sg.id, { videoId: sg.youtube, width: '100%', height: '100%', playerVars: { playsinline: 1, rel: 0 } });
+  }).catch(() => { frame.hidden = true; fallback.hidden = false; });
+}
+
 function settingsScreen() {
   const sel = (key, vals, fmt) => {
     const s = h('select', { onchange: (e) => { S.settings[key] = Number(e.target.value); save(); } }, vals.map((v) => h('option', { value: v }, fmt ? fmt(v) : v)));

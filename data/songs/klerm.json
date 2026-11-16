@@ -1,0 +1,51 @@
+{
+  "id": "klerm",
+  "title": "เคลิ้ม · Klə́əm (Swooning)",
+  "artist": "Slot Machine",
+  "year": 2013,
+  "youtube": "UZxDLz-li_c",
+  "lyricsUrl": "https://deungdutjai.com/2014/03/30/klermslotmachine/",
+  "about": "A rock ballad about loving someone you know is bad for you. One look into their eyes and your heart 'floats away' again. Useful for: the casual 'you' (təə), dtɛ̀ɛ gɔ̂ɔ (but still), duang (the classifier for hearts) and feelings vocabulary.",
+  "lines": [
+    { "r": "rúu dii təə nâ jai ráai", "th": "รู้ดีเธอน่ะใจร้าย", "en": "I know full well you're heartless", "note": "rúu dii = know very well. nâ is a soft spoken particle that marks the topic: 'you, you're heartless'. Subject 'I' is dropped, as in most songs and casual speech." },
+    { "r": "dtɛ̀ɛ gɔ̂ɔ rák təə mâi rúu tammai", "th": "แต่ก็รักเธอไม่รู้ทำไม", "en": "but I still love you, I don't know why", "note": "dtɛ̀ɛ gɔ̂ɔ = but still (the same gɔ̂ɔ as tʉ̌ng … gɔ̂ɔ). mâi rúu tammai = 'don't know why', very common in casual speech." },
+    { "r": "piang sòp dtaa təə, jai duang dəəm klə́əm lɔɔi bpai", "th": "เพียงสบตาเธอ ใจดวงเดิม เคลิ้มลอยไป", "en": "just meeting your eyes, my same old heart drifts off in a daze", "note": "The hook. piang = just, only. sòp dtaa = to meet someone's eyes. duang is the classifier for hearts (also sun, moon, stars). dəəm = the same as before. klə́əm = dreamy, swooning, half-asleep. lɔɔi bpai = float away." },
+    { "r": "hǔa jai duang níi mâi làap jam", "th": "หัวใจดวงนี้ไม่หลาบจำ", "en": "this heart never learns its lesson", "note": "noun + classifier + níi again: hǔa jai duang níi = this heart. làap jam = to learn your lesson (after something bad)." },
+    { "r": "hǔa jai nîi man ngom-ngaai", "th": "หัวใจนี่มันงมงาย", "en": "this heart of mine is so gullible", "note": "nîi man … = casual way to complain about something, like 'this thing, it's …'. man = it (also used casually for animals and annoying things). ngom-ngaai = blindly believing, gullible." },
+    { "r": "jəə təə túk tii gɔ̂ɔ lǒng taang bpai", "th": "เจอเธอทุกทีก็หลงทางไป", "en": "every time I see you, I lose my way", "note": "túk tii = every time (casual for túk kráng). lǒng taang = to get lost; here, to lose yourself." }
+  ],
+  "words": [
+    ["təə", "เธอ", "you (songs, partners, close friends); also 'she'"],
+    ["rúu dii", "รู้ดี", "to know very well"],
+    ["jai ráai", "ใจร้าย", "cruel, heartless"],
+    ["mâi waai (jà)", "ไม่วาย(จะ)", "can't help but, still keep on"],
+    ["yɔɔm", "ยอม", "to give in, to accept"],
+    ["pìt sǎnyaa", "ผิดสัญญา", "to break a promise"],
+    ["sǎnyaa", "สัญญา", "promise; to promise"],
+    ["piang", "เพียง", "just, only"],
+    ["sòp dtaa", "สบตา", "to meet someone's eyes"],
+    ["hǔa jai", "หัวใจ", "heart"],
+    ["duang", "ดวง", "classifier: hearts, sun, moon, stars"],
+    ["dəəm", "เดิม", "the same as before, original"],
+    ["klə́əm", "เคลิ้ม", "dreamy, swooning, drowsy"],
+    ["lɔɔi", "ลอย", "to float"],
+    ["làap jam", "หลาบจำ", "to learn your lesson"],
+    ["sám-sám", "ซ้ำๆ", "again and again"],
+    ["sà-jai", "สะใจ", "satisfied (often at someone's misfortune)"],
+    ["ngom-ngaai", "งมงาย", "gullible, blindly believing"],
+    ["dtàk-dtʉan", "ตักเตือน", "to warn"],
+    ["jèp-chám", "เจ็บช้ำ", "hurt, heartbroken"],
+    ["tam ráai dtua eeng", "ทำร้ายตัวเอง", "to hurt yourself"],
+    ["jâo gam", "เจ้ากรรม", "cursed, darned (about something that keeps causing trouble)"],
+    ["sǎmkan", "สำคัญ", "important"],
+    ["lǒng taang", "หลงทาง", "to get lost"],
+    ["túk tii", "ทุกที", "every time (casual)"],
+    ["yɔ́ɔn kʉʉn maa", "ย้อนคืนมา", "to come back, go back (in time)"]
+  ],
+  "notes": [
+    "Songs use təə (you) and chán (I) for lovers. In speech, təə is used between partners or close friends, mostly by women; many people just use names or kun.",
+    "Song lyrics drop subjects even more than speech does: 'rák təə mâi rúu tammai' (I love you, I don't know why). Work out who is doing what from context.",
+    "The singer talks about hǔa jai (the heart) as if it were a separate stubborn person: it doesn't listen, it doesn't learn, it hurts itself. Thai songs do this a lot.",
+    "ไซร้ (sái), near the end of the song, is an old-fashioned poetic word for emphasis. You'll see it in songs, but don't use it when you speak."
+  ]
+}

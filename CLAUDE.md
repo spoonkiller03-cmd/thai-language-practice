@@ -12,6 +12,7 @@ A static PWA (no build step) hosted on GitHub Pages from `main`. The owner sends
   - Card ids are derived from the romanization text, so editing a sentence's text resets its progress. Fix typos when needed, but don't churn.
 - `app.js`: the app. `GENERATORS` makes random, endless items (time, duration, day, date, month, year, ordinal, meaning, classifier). A lesson turns a generator on by listing it in `generators`.
 - Every card is multiple choice (the owner asked for no typing, 2026-11-15). Wrong options come from the same lesson first, then other lessons, so keep bracketed cloze targets varied within a lesson. Cloze cards always show the English meaning, so a distractor that fits grammatically is ruled out by the meaning. A generator item lists wrong answers in `distract` (best ones first) and `makeGen` turns it into options. `qa` answers containing "(example)" are open questions: the app shows them as think-then-compare cards, not options.
+- `data/songs/index.json` lists song files in `data/songs/`. A song is a study page (not quiz cards): `id, title, artist, year, youtube` (video id), `lyricsUrl`, `about`, `lines[{r, th, en, note}]` (6-8 SHORT key excerpts only, in class romanization, Claude's own translations), `words[[rom, thai, english]]`, `notes[]`. Never store full lyrics. The owner sets line timestamps on their device (⏱ button).
 - `sw.js`: network-first cache. Bump `CACHE` only if the cached shell needs a hard reset.
 
 ## Romanization (match the class exactly: Duke Language School, Journey 2)
