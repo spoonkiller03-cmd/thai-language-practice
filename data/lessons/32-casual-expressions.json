@@ -1,0 +1,40 @@
+{
+  "id": "casual-expressions",
+  "title": "Casual talk: jà dtaai, chə̌əi-chə̌əi, mâi hěn lə̌ə, kanàat níi",
+  "source": "Journey 3 · dialogue expressions + board notes",
+  "notes": [
+    "mâi hěn lə̌ə? = rhetorical 'Can't you see?' (a bit annoyed): chán gamlang tam ngaan yùu, mâi hěn lə̌ə?",
+    "adjective + jà dtaai = extremely, '… to death' (very colloquial): kúmkâa jà dtaai (so worth it), rɔ́ɔn jà dtaai, ngâai jà dtaai. Like saying mâak 1,000,000%.",
+    "chə̌əi-chə̌əi after a verb = doing it without effort or intention, just … and nothing else. Usually negative (criticism, warnings): nâng chə̌əi-chə̌əi (sit around doing nothing). The verb can change: yʉʉn chə̌əi-chə̌əi, nɔɔn chə̌əi-chə̌əi.",
+    "kanàat níi = this much, to this degree. Use it with a question or a detail: tammai gin yə́ kanàat níi? (why eat this much?), mâi kəəi hěn rót dtìt kanàat níi."
+  ],
+  "generators": [],
+  "vocab": [
+    ["mâi hěn lə̌ə?", "ไม่เห็นเหรอ", "(rhetorical) can't you see?"],
+    ["kúmkâa", "คุ้มค่า", "worth it, good value"],
+    ["kúmkâa jà dtaai", "คุ้มค่าจะตาย", "extremely worth it"],
+    ["… jà dtaai", "…จะตาย", "(casual) extremely, to death"],
+    ["chə̌əi-chə̌əi", "เฉยๆ", "indifferent; just (doing nothing)"],
+    ["nâng chə̌əi-chə̌əi", "นั่งเฉยๆ", "to sit around doing nothing"],
+    ["kanàat níi", "ขนาดนี้", "this much, to this degree"],
+    ["kanàat nán", "ขนาดนั้น", "that much"]
+  ],
+  "sentences": [
+    ["aahǎan jaan níi 60 bàat, [kúmkâa] jà dtaai", "อาหารจานนี้ 60 บาท คุ้มค่าจะตาย", "This dish is 60 baht, so worth it."],
+    ["wanníi rɔ́ɔn jà [dtaai]", "วันนี้ร้อนจะตาย", "It's hot as hell today."],
+    ["gaanbâan wanníi [ngâai] jà dtaai", "การบ้านวันนี้ง่ายจะตาย", "Today's homework is super easy."],
+    ["chán gamlang gin kâao yùu, [mâi hěn] lə̌ə?", "ฉันกำลังกินข้าวอยู่ ไม่เห็นเหรอ", "I'm eating, can't you see?"],
+    ["fǒn dtòk yùu, mâi hěn [lə̌ə]?", "ฝนตกอยู่ ไม่เห็นเหรอ", "It's raining, can't you see?"],
+    ["yàa [nâng] chə̌əi-chə̌əi, maa chûai nɔ̀i", "อย่านั่งเฉยๆ มาช่วยหน่อย", "Don't just sit there, come and help."],
+    ["káo gɔ̂ɔ yʉʉn [chə̌əi-chə̌əi], mâi tam arai ləəi", "เขาก็ยืนเฉยๆ ไม่ทำอะไรเลย", "He just stood there and did nothing."],
+    ["tammai gin yə́ [kanàat níi]?", "ทำไมกินเยอะขนาดนี้", "Why are you eating this much?"],
+    ["mâi kəəi hěn rót dtìt kanàat [níi]", "ไม่เคยเห็นรถติดขนาดนี้", "I've never seen traffic this bad."],
+    ["[pèt] kanàat níi gin dâai lə̌ə?", "เผ็ดขนาดนี้กินได้เหรอ", "You can eat it this spicy?"]
+  ],
+  "qa": [
+    {"ctx": "🎟️ The concert was cheap and amazing. Tell a friend, casually.", "q": "kɔnsə̀ət bpen yangngai?", "a": "kúmkâa jà dtaai"},
+    {"ctx": "😤 Your roommate asks if you're free while you're clearly working.", "q": "wâang mǎi?", "a": "mâi wâang, mâi hěn lə̌ə?"},
+    {"ctx": "🛋️ Your brother just sits there while you clean. Tell him off.", "q": "", "a": "yàa nâng chə̌əi-chə̌əi, maa chûai nɔ̀i"},
+    {"ctx": "🍱 Your friend ordered a mountain of food. Ask why so much.", "q": "", "a": "tammai sàng yə́ kanàat níi?"}
+  ]
+}

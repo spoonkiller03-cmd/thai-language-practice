@@ -1,7 +1,7 @@
 {
   "id": "nature-places",
   "title": "Nature, places and nâa- words; tʉ̌ng … gɔ̂ɔ",
-  "source": "Board notes · Nov 12",
+  "source": "Board notes · Nov 12 + Vocab Builder p. 87",
   "notes": [
     "tammachâat = nature · bpen tammachâat = natural.",
     "Land & water: puukǎo / dɔɔi (mountain; dɔɔi in the north: dɔɔi Sùtêep, dɔɔi Intanon) · puukǎo fai (volcano) · talee saai (desert) · tûng yâa (grassland) · naa (rice field) · bʉng (marsh) · talee sàap (lake) · mɛ̂ɛnáam (river) · klɔɔng (canal, a river people made) · náampú rɔ́ɔn (hot spring) · hǐn (rock).",
@@ -9,7 +9,8 @@
     "mii bprayòot gàp sùkkapâap = good for your health.",
     "nâa + feeling = makes you feel it: nǎng pǐi nâa glua (scary), rian lêek nâa bʉ̀a (boring), rót dtìt nâa moohǒo (infuriating).",
     "nâa + verb = worth doing: nâa duu, nâa bpai, nâa sʉ́ʉ, nâa gin (looks tasty), nâa bpiin (worth climbing).",
-    "tʉ̌ng … gɔ̂ɔ … = even though … still …: tʉ̌ng yúróop nâa bpai, chán gɔ̂ɔ mâi mii ngən (even though Europe is worth visiting, I still have no money)."
+    "tʉ̌ng … gɔ̂ɔ … = even though … still …: tʉ̌ng yúróop nâa bpai, chán gɔ̂ɔ mâi mii ngən (even though Europe is worth visiting, I still have no money).",
+    "Picture words (book p. 87): bpàa (forest) · námdtòk (waterfall) · hàat saai (beach) · gɔ̀ (island) · tâm (cave)."
   ],
   "generators": [],
   "vocab": [
@@ -46,7 +47,12 @@
     ["nǎng pǐi", "หนังผี", "horror film"],
     ["tʉ̌ng … gɔ̂ɔ", "ถึง…ก็", "even though … still"],
     ["satǎantîi tɔ̂ngtîao", "สถานที่ท่องเที่ยว", "tourist attraction"],
-    ["andàp", "อันดับ", "rank, number (in a list)"]
+    ["andàp", "อันดับ", "rank, number (in a list)"],
+    ["bpàa", "ป่า", "forest"],
+    ["námdtòk", "น้ำตก", "waterfall"],
+    ["hàat saai", "หาดทราย", "(sandy) beach"],
+    ["gɔ̀", "เกาะ", "island"],
+    ["tâm", "ถ้ำ", "cave"]
   ],
   "sentences": [
     ["chán chɔ̂ɔp [tammachâat] mâak gwàa mʉang", "ฉันชอบธรรมชาติมากกว่าเมือง", "I like nature more than the city."],
@@ -71,7 +77,12 @@
     ["sʉ̂a dtua níi tùuk lɛ́ɛo gɔ̂ɔ sǔai, [nâa sʉ́ʉ]", "เสื้อตัวนี้ถูกแล้วก็สวย น่าซื้อ", "This shirt is cheap and pretty; worth buying."],
     ["[tʉ̌ng] fǒn dtòk, rao gɔ̂ɔ jà bpai puukǎo", "ถึงฝนตก เราก็จะไปภูเขา", "Even though it's raining, we'll still go to the mountains."],
     ["tʉ̌ng káo ûan, káo [gɔ̂ɔ] nâarák", "ถึงเขาอ้วน เขาก็น่ารัก", "Even though he's chubby, he's still cute."],
-    ["tʉ̌ng paasǎa tai yâak, chán gɔ̂ɔ [chɔ̂ɔp] rian", "ถึงภาษาไทยยาก ฉันก็ชอบเรียน", "Even though Thai is hard, I still like studying it."]
+    ["tʉ̌ng paasǎa tai yâak, chán gɔ̂ɔ [chɔ̂ɔp] rian", "ถึงภาษาไทยยาก ฉันก็ชอบเรียน", "Even though Thai is hard, I still like studying it."],
+    ["chiangmài mii [bpàa] lɛ́ námdtòk sǔai-sǔai", "เชียงใหม่มีป่าและน้ำตกสวยๆ", "Chiang Mai has beautiful forests and waterfalls."],
+    ["rao wâaináam tîi [námdtòk]", "เราว่ายน้ำที่น้ำตก", "We swim at the waterfall."],
+    ["puugèt bpen [gɔ̀] tîi yài tîisùt nai mʉang tai", "ภูเก็ตเป็นเกาะที่ใหญ่ที่สุดในเมืองไทย", "Phuket is the biggest island in Thailand."],
+    ["dèk-dèk lên tîi [hàat saai]", "เด็กๆเล่นที่หาดทราย", "The kids play on the beach."],
+    ["yàa kâo [tâm] kon diao", "อย่าเข้าถ้ำคนเดียว", "Don't go into a cave alone."]
   ],
   "qa": [
     {"ctx": "🏔️ Name 3 places you want to visit before you die, ranked.", "q": "3 andàp satǎantîi tɔ̂ngtîao tîi kun yàak bpai gɔ̀ɔn dtaai mii arai bâang?", "a": "(example) andàp 1 Kǎo Sòk, andàp 2 dɔɔi Intanon, andàp 3 …"},

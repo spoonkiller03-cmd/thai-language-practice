@@ -1,0 +1,57 @@
+{
+  "id": "wh-gor",
+  "title": "Anything, anyone, anywhere: question word + gɔ̂ɔ",
+  "source": "Journey 3 · book p. 106–107 + board notes",
+  "notes": [
+    "Question word + gɔ̂ɔ = '-ever / no matter …': whatever the situation, the result is the same. Very common in casual Thai.",
+    "arai gɔ̂ɔ (whatever, anything) · krai gɔ̂ɔ (whoever, anyone) · tîinǎi gɔ̂ɔ (wherever, everywhere) · mʉ̂arài gɔ̂ɔ (whenever, always) · yangngai gɔ̂ɔ (however, no matter how).",
+    "tâorài gɔ̂ɔ (however much) · kɛ̂ɛnǎi gɔ̂ɔ (no matter how + adjective) · gìi (an) gɔ̂ɔ (however many) · (an) nǎi gɔ̂ɔ (whichever, any + classifier).",
+    "Pattern: topic + question word + gɔ̂ɔ + result: aahǎan tai arai gɔ̂ɔ arɔ̀i (any Thai food is delicious). Subject can sit before gɔ̂ɔ: rɔ́ɔn kɛ̂ɛnǎi, mɛ̂ɛ gɔ̂ɔ mâi bpə̀ət ɛɛ.",
+    "Negative result (gɔ̂ɔ mâi …) = it never happens: arai gɔ̂ɔ mâi yàak gin (don't want to eat anything), krai gɔ̂ɔ mâi chɔ̂ɔp (nobody likes it).",
+    "… gɔ̂ɔ dâai = any is fine: arai gɔ̂ɔ dâai (anything's fine), mʉ̂arài gɔ̂ɔ dâai (any time), tîinǎi gɔ̂ɔ dâai.",
+    "rʉ̌ʉ bplàao, mǎi and tammai do NOT work with gɔ̂ɔ.",
+    "Compare túk = 100%, every: aahǎan tai túk jaan arɔ̀i · kon tai túk kon jai dii · hâang túk tîi mii ɛɛ."
+  ],
+  "generators": [],
+  "vocab": [
+    ["arai gɔ̂ɔ", "อะไรก็", "whatever, anything"],
+    ["krai gɔ̂ɔ", "ใครก็", "whoever, anyone"],
+    ["tîinǎi gɔ̂ɔ", "ที่ไหนก็", "wherever, everywhere"],
+    ["mʉ̂arài gɔ̂ɔ", "เมื่อไหร่ก็", "whenever, always"],
+    ["yangngai gɔ̂ɔ", "ยังไงก็", "however, no matter how"],
+    ["tâorài gɔ̂ɔ", "เท่าไหร่ก็", "however much"],
+    ["kɛ̂ɛnǎi gɔ̂ɔ", "แค่ไหนก็", "no matter how (+ adjective)"],
+    ["gìi … gɔ̂ɔ", "กี่…ก็", "however many"],
+    ["(an) nǎi gɔ̂ɔ", "(อัน)ไหนก็", "whichever, any (+ classifier)"],
+    ["arai gɔ̂ɔ dâai", "อะไรก็ได้", "anything is fine"],
+    ["prɔ́ɔm gan", "พร้อมกัน", "together, at the same time"],
+    ["ngûang", "ง่วง", "sleepy"]
+  ],
+  "sentences": [
+    ["aahǎan tai [arai] gɔ̂ɔ arɔ̀i", "อาหารไทยอะไรก็อร่อย", "Any Thai food is delicious."],
+    ["kon tai [krai] gɔ̂ɔ jai dii", "คนไทยใครก็ใจดี", "All Thai people are kind."],
+    ["hâang nai grungtêep [tîinǎi] gɔ̂ɔ mii ɛɛ", "ห้างในกรุงเทพที่ไหนก็มีแอร์", "Every mall in Bangkok has air-con."],
+    ["tîi BTS [mʉ̂arài] gɔ̂ɔ kon yə́", "ที่ BTS เมื่อไหร่ก็คนเยอะ", "The BTS is always crowded."],
+    ["lót náamnàk [yangngai] gɔ̂ɔ mâi pɔ̌ɔm", "ลดน้ำหนักยังไงก็ไม่ผอม", "However I diet, I don't get thinner."],
+    ["rɔ́ɔn [kɛ̂ɛnǎi], mɛ̂ɛ gɔ̂ɔ mâi bpə̀ət ɛɛ", "ร้อนแค่ไหน แม่ก็ไม่เปิดแอร์", "No matter how hot it is, Mum won't turn on the air-con."],
+    ["rɔɔngtáao kûu níi raakaa [tâorài] gɔ̂ɔ kúmkâa", "รองเท้าคู่นี้ราคาเท่าไหร่ก็คุ้มค่า", "These shoes are worth it, whatever the price."],
+    ["chán dʉ̀ʉm gaafɛɛ [gìi] gɛ̂ɛo gɔ̂ɔ yang ngûang", "ฉันดื่มกาแฟกี่แก้วก็ยังง่วง", "However many coffees I drink, I'm still sleepy."],
+    ["sʉ̂a dtua [nǎi] gɔ̂ɔ sǔai", "เสื้อตัวไหนก็สวย", "Any of these shirts looks good."],
+    ["kun yàak gin arai? ao [arai] gɔ̂ɔ dâai", "คุณอยากกินอะไร เอาอะไรก็ได้", "What do you want to eat? Anything's fine."],
+    ["[mʉ̂arài] gɔ̂ɔ dâai, chán wâang", "เมื่อไหร่ก็ได้ ฉันว่าง", "Any time is fine, I'm free."],
+    ["wan [nǎi] gɔ̂ɔ dâai, chán wâang túk wan", "วันไหนก็ได้ ฉันว่างทุกวัน", "Any day works, I'm free every day."],
+    ["weelaa sǐa jai, arai gɔ̂ɔ [mâi] yàak tam", "เวลาเสียใจ อะไรก็ไม่อยากทำ", "When I'm sad, I don't feel like doing anything."],
+    ["tîi nîi [krai] gɔ̂ɔ mâi rúujàk káo", "ที่นี่ใครก็ไม่รู้จักเขา", "Nobody here knows him."],
+    ["chán fang pleeng níi yangngai gɔ̂ɔ fang [mâi] ɔ̀ɔk", "ฉันฟังเพลงนี้ยังไงก็ฟังไม่ออก", "However I listen to this song, I can't make out the words."],
+    ["bpai [tîinǎi] gɔ̂ɔ dâai tâa bpai gàp kun", "ไปที่ไหนก็ได้ถ้าไปกับคุณ", "Anywhere is fine if I go with you."],
+    ["aahǎan tai túk [jaan] arɔ̀i", "อาหารไทยทุกจานอร่อย", "Every Thai dish is delicious."],
+    ["rao rɔ́ɔng pleeng [prɔ́ɔm gan]", "เราร้องเพลงพร้อมกัน", "We sing together."]
+  ],
+  "qa": [
+    {"ctx": "🍜 A friend asks what you want to eat. You don't mind.", "q": "kun yàak gin arai?", "a": "arai gɔ̂ɔ dâai"},
+    {"ctx": "📅 When should we meet? Any time works for you.", "q": "jəə gan mʉ̂arài dii?", "a": "mʉ̂arài gɔ̂ɔ dâai"},
+    {"ctx": "🥵 Is Bangkok hot? It's hot everywhere.", "q": "grungtêep rɔ́ɔn mǎi?", "a": "rɔ́ɔn, tîinǎi gɔ̂ɔ rɔ́ɔn"},
+    {"ctx": "🎵 No matter how many times you listen, you can't catch the words.", "q": "", "a": "fang gìi kráng gɔ̂ɔ fang mâi ɔ̀ɔk"},
+    {"ctx": "😴 However much you sleep, it's never enough.", "q": "", "a": "nɔɔn tâorài gɔ̂ɔ mâi pɔɔ"}
+  ]
+}
